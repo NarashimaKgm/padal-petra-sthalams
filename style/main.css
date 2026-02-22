@@ -1,0 +1,265 @@
+/* ============================================================
+   PAADAL PETRA STHALAMS — main.css
+   Global CSS variables, reset, base typography
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* ── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Brand colors */
+  --clr-maroon:        #800000;
+  --clr-maroon-dark:   #5C0000;
+  --clr-saffron:       #E8520A;
+  --clr-saffron-light: #FF7A3D;
+  --clr-gold:          #C8960C;
+  --clr-gold-light:    #F5E6A3;
+  --clr-gold-bg:       #FFF8E7;
+
+  /* Backgrounds */
+  --clr-parchment:     #F5ECD7;
+  --clr-cream:         #FDF6E3;
+  --clr-stone:         #E8D8B4;
+
+  /* Text */
+  --clr-text-primary:  #2C1810;
+  --clr-text-secondary:#6B4226;
+  --clr-text-light:    #9B7653;
+  --clr-text-inverse:  #FDF6E3;
+
+  /* Nayanmar accent colors */
+  --clr-sambandar:     #C0392B;
+  --clr-appar:         #D4700A;
+  --clr-sundarar:      #7B2D9E;
+
+  /* Borders / shadows */
+  --border-stone:      1px solid var(--clr-stone);
+  --shadow-card:       0 2px 8px rgba(44, 24, 16, 0.12);
+  --shadow-hover:      0 6px 20px rgba(44, 24, 16, 0.22);
+  --shadow-header:     0 2px 8px rgba(0, 0, 0, 0.3);
+
+  /* Typography */
+  --font-heading:      'Cinzel Decorative', Georgia, serif;
+  --font-body:         'Noto Sans', Arial, sans-serif;
+
+  /* Spacing */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  32px;
+  --sp-xl:  64px;
+
+  /* Layout */
+  --max-width:         1280px;
+  --header-height:     64px;
+  --radius-sm:         4px;
+  --radius-md:         8px;
+  --radius-lg:         16px;
+}
+
+/* ── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--clr-parchment);
+  color: var(--clr-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--clr-saffron); text-decoration: none; }
+a:hover { color: var(--clr-maroon); text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+ul, ol { list-style: none; }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.site-header {
+  background: var(--clr-maroon);
+  color: var(--clr-text-inverse);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--sp-lg);
+  box-shadow: var(--shadow-header);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--clr-gold);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--clr-gold-light);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  color: var(--clr-stone);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  gap: var(--sp-md);
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--clr-stone);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  padding: var(--sp-xs) var(--sp-sm);
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--clr-gold-light);
+  background: rgba(255,255,255,0.08);
+  text-decoration: none;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--clr-maroon-dark);
+  color: var(--clr-stone);
+  text-align: center;
+  padding: var(--sp-lg);
+  font-size: 0.85rem;
+  border-top: 3px solid var(--clr-gold);
+  margin-top: var(--sp-xl);
+}
+
+.site-footer a {
+  color: var(--clr-gold-light);
+}
+
+/* ── Utility classes ─────────────────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--sp-lg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* Nayanmar badge pills */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.badge-sambandar { background: var(--clr-sambandar); }
+.badge-appar     { background: var(--clr-appar); }
+.badge-sundarar  { background: var(--clr-sundarar); }
+
+/* Section headings */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--clr-maroon);
+  padding-bottom: var(--sp-sm);
+  border-bottom: 2px solid var(--clr-gold);
+  margin-bottom: var(--sp-md);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--clr-saffron);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--clr-saffron-light);
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--clr-maroon);
+  border: 2px solid var(--clr-maroon);
+}
+
+.btn-outline:hover {
+  background: var(--clr-maroon);
+  color: var(--clr-text-inverse);
+  text-decoration: none;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--clr-stone);
+  margin: var(--sp-lg) 0;
+}
+
+/* ── Responsive base ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  :root { --sp-lg: 16px; }
+
+  .site-header { padding: 0 var(--sp-md); }
+  .logo-title { font-size: 0.85rem; }
+  .logo-subtitle { display: none; }
+
+  .site-nav a { font-size: 0.8rem; padding: var(--sp-xs); }
+}

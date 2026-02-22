@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sambandar",
+    "name": "Thirugnana Sambandar",
+    "period": "7th century CE",
+    "birth_place": "Sirkazhi",
+    "temples_count": 216,
+    "thevaram_books": "Books 1 – 3",
+    "description": "The child saint who began composing hymns from the age of three. Son of Sivapada Hridayar of Sirkazhi, he is said to have been nursed by Goddess Parvati herself. He composed 4181 hymns across 384 pathigams praising Shiva temples across Tamil Nadu.",
+    "color": "#C0392B"
+  },
+  {
+    "id": "appar",
+    "name": "Appar (Thirunavukkarasar)",
+    "period": "7th century CE",
+    "birth_place": "Thiruvamur",
+    "temples_count": 135,
+    "thevaram_books": "Books 4 – 6",
+    "description": "Originally a Jain monk named Dharmasena, he converted back to Shaivism after a miraculous cure. He spent his life sweeping temple floors with his own hair as penance. Known as Appar (father) by Sambandar, he composed moving hymns of devotion and surrender.",
+    "color": "#D4700A"
+  },
+  {
+    "id": "sundarar",
+    "name": "Sundarar",
+    "period": "8th century CE",
+    "birth_place": "Thiruvavaduthurai",
+    "temples_count": 100,
+    "thevaram_books": "Book 7",
+    "description": "Known as Tambiran Tholan (friend of God), Sundarar shared an intimate and friendly relationship with Lord Shiva. He is famous for composing the Tiruthonda Thogai — a list of the 63 Nayanmars. His hymns are noted for their directness and emotional depth.",
+    "color": "#7B2D9E"
+  }
+]

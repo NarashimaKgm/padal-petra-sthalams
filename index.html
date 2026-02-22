@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paadal Petra Sthalams — 276 Sacred Shiva Temples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Reset & base ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans', Arial, sans-serif;
+      background: #F5ECD7;
+      color: #2C1810;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ── Design tokens ─────────────────────────────────────── */
+    :root {
+      --maroon:      #800000;
+      --maroon-dark: #5C0000;
+      --saffron:     #E8520A;
+      --gold:        #C8960C;
+      --gold-light:  #F5E6A3;
+      --cream:       #FDF6E3;
+      --parchment:   #F5ECD7;
+      --stone:       #E8D8B4;
+      --text:        #2C1810;
+      --text-muted:  #6B4226;
+      --sambandar:   #C0392B;
+      --appar:       #D4700A;
+      --sundarar:    #7B2D9E;
+    }
+
+    /* ── Header ────────────────────────────────────────────── */
+    .site-header {
+      background: var(--maroon);
+      border-bottom: 3px solid var(--gold);
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      font-size: 28px;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .logo-text-main {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1rem;
+      color: var(--gold-light);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+    .logo-text-sub {
+      font-size: 0.65rem;
+      color: #c8b08a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .site-nav a {
+      color: #c8b08a;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .site-nav a:hover {
+      color: var(--gold-light);
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* ── Hero section ──────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--maroon-dark) 0%, #6B0000 50%, #8B1A00 100%);
+      color: #FDF6E3;
+      text-align: center;
+      padding: 56px 24px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      /* Subtle geometric pattern overlay */
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(200,150,12,0.06) 0px,
+        rgba(200,150,12,0.06) 1px,
+        transparent 1px,
+        transparent 20px
+      );
+    }
+    .hero-inner { position: relative; z-index: 1; }
+    .hero-om {
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .hero-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      color: var(--gold-light);
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #c8b08a;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 99px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .stat-pill.sambandar { background: rgba(192,57,43,0.5); color: #FFD5D0; }
+    .stat-pill.appar     { background: rgba(212,112,10,0.5); color: #FFE8CC; }
+    .stat-pill.sundarar  { background: rgba(123,45,158,0.5); color: #EDD5FF; }
+
+    /* ── Search + Filter bar ───────────────────────────────── */
+    .controls-bar {
+      background: var(--cream);
+      border-bottom: 2px solid var(--stone);
+      padding: 16px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      position: sticky;
+      top: 64px;
+      z-index: 90;
+      box-shadow: 0 2px 6px rgba(44,24,16,0.08);
+    }
+    .search-wrap {
+      flex: 1 1 240px;
+      position: relative;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      padding: 9px 12px 9px 38px;
+      border: 1.5px solid var(--stone);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: #fff;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(200,150,12,0.15);
+    }
+    .search-input::placeholder { color: #9B7653; }
+
+    select.filter-select {
+      padding: 9px 28px 9px 10px;
+      border: 1.5px solid var(--stone);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B4226' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+      -webkit-appearance: none;
+      appearance: none;
+      color: var(--text);
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    select.filter-select:focus { border-color: var(--gold); }
+
+    .controls-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+    }
+    .result-count {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* View toggle buttons */
+    .view-toggle {
+      display: flex;
+      border: 1.5px solid var(--stone);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .view-btn {
+      padding: 7px 12px;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: inherit;
+      transition: background 0.15s, color 0.15s;
+    }
+    .view-btn + .view-btn { border-left: 1.5px solid var(--stone); }
+    .view-btn.active {
+      background: var(--maroon);
+      color: var(--gold-light);
+    }
+    .view-btn svg { flex-shrink: 0; }
+
+    /* ── Main content area ─────────────────────────────────── */
+    .main-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 28px 32px 64px;
+    }
+
+    /* ── Grid view ─────────────────────────────────────────── */
+    .temple-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .temple-card {
+      background: var(--cream);
+      border-radius: 8px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 2px 8px rgba(44,24,16,0.10);
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+    .temple-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(44,24,16,0.18);
+      background: var(--gold-light);
+    }
+    .temple-card[data-nayanmars~="sambandar"] { border-left-color: var(--sambandar); }
+    .temple-card[data-nayanmars~="appar"]     { border-left-color: var(--appar); }
+    .temple-card[data-nayanmars~="sundarar"]  { border-left-color: var(--sundarar); }
+
+    .card-number {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .card-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+      padding-right: 28px;
+      line-height: 1.3;
+    }
+    .card-location {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 2px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .badge-sambandar { background: var(--sambandar); }
+    .badge-appar     { background: var(--appar); }
+    .badge-sundarar  { background: var(--sundarar); }
+
+    /* ── List view ─────────────────────────────────────────── */
+    .temple-list { display: none; }
+    .temple-list-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 11px 16px;
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .temple-list-row:hover {
+      background: var(--gold-light);
+      transform: translateX(3px);
+    }
+    .temple-list-row[data-nayanmars~="sambandar"] { border-left-color: var(--sambandar); }
+    .temple-list-row[data-nayanmars~="appar"]     { border-left-color: var(--appar); }
+    .temple-list-row[data-nayanmars~="sundarar"]  { border-left-color: var(--sundarar); }
+
+    .list-num {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      width: 32px;
+      flex-shrink: 0;
+      text-align: right;
+    }
+    .list-name {
+      flex: 1;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .list-location {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      width: 160px;
+      flex-shrink: 0;
+    }
+    .list-badges {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .list-arrow {
+      color: var(--gold);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* ── Active state for views ────────────────────────────── */
+    body.list-view .temple-grid { display: none; }
+    body.list-view .temple-list { display: block; }
+    body.list-view #load-more-wrap { display: none; }
+
+    /* ── Load more ─────────────────────────────────────────── */
+    #load-more-wrap {
+      text-align: center;
+      margin-top: 32px;
+    }
+    .btn-load-more {
+      padding: 11px 32px;
+      background: transparent;
+      border: 2px solid var(--maroon);
+      border-radius: 6px;
+      color: var(--maroon);
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-load-more:hover {
+      background: var(--maroon);
+      color: var(--gold-light);
+    }
+
+    /* ── Empty / no-results state ──────────────────────────── */
+    .empty-state {
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--text-muted);
+      display: none;
+    }
+    .empty-state.visible { display: block; }
+    .empty-state-icon { font-size: 3rem; margin-bottom: 12px; }
+    .empty-state h3 { font-size: 1.1rem; margin-bottom: 6px; color: var(--text); }
+
+    /* ── Footer ────────────────────────────────────────────── */
+    .site-footer {
+      background: var(--maroon-dark);
+      border-top: 3px solid var(--gold);
+      color: #c8b08a;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.82rem;
+    }
+
+    /* ── Responsive ────────────────────────────────────────── */
+    @media (max-width: 1100px) {
+      .temple-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .temple-grid { grid-template-columns: repeat(2, 1fr); }
+      .controls-bar { padding: 12px 16px; top: 56px; }
+      .main-content { padding: 20px 16px 48px; }
+      .site-header { padding: 0 16px; height: 56px; }
+      .logo-text-sub { display: none; }
+      .list-location { display: none; }
+    }
+    @media (max-width: 480px) {
+      .temple-grid { grid-template-columns: 1fr; }
+      .hero { padding: 40px 16px 32px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">&#x1F6D5;</span>
+      <div>
+        <div class="logo-text-main">Paadal Petra Sthalams</div>
+        <div class="logo-text-sub">276 Sacred Shiva Temples</div>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-om">&#x0950;</span>
+      <h1 class="hero-title">Paadal Petra Sthalams</h1>
+      <p class="hero-subtitle">276 Sacred Shiva Temples of the Tevaram</p>
+      <div class="hero-stats">
+        <span class="stat-pill sambandar">&#9670; Sambandar &mdash; 216 Temples</span>
+        <span class="stat-pill appar">&#9670; Appar &mdash; 135 Temples</span>
+        <span class="stat-pill sundarar">&#9670; Sundarar &mdash; 100 Temples</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Controls bar ───────────────────────────────────────── -->
+  <div class="controls-bar">
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input"
+        placeholder="Search by temple name, city or district…"
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- Filters -->
+    <select id="filter-saint" class="filter-select" title="Filter by Nayanmar">
+      <option value="">All Nayanmars</option>
+      <option value="sambandar">Sambandar</option>
+      <option value="appar">Appar</option>
+      <option value="sundarar">Sundarar</option>
+    </select>
+
+    <select id="filter-district" class="filter-select" title="Filter by district">
+      <option value="">All Districts</option>
+    </select>
+
+    <!-- Right side: count + view toggle -->
+    <div class="controls-right">
+      <span class="result-count" id="result-count">276 temples</span>
+      <div class="view-toggle">
+        <button class="view-btn active" id="btn-grid" title="Grid view" onclick="setView('grid')">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+            <rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/>
+            <rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/>
+          </svg>
+          Grid
+        </button>
+        <button class="view-btn" id="btn-list" title="List view" onclick="setView('list')">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 16 16">
+            <line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/>
+          </svg>
+          List
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Main content ───────────────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- Grid view -->
+    <div class="temple-grid" id="temple-grid"></div>
+
+    <!-- List view -->
+    <div class="temple-list" id="temple-list"></div>
+
+    <!-- No results -->
+    <div class="empty-state" id="empty-state">
+      <div class="empty-state-icon">&#127963;</div>
+      <h3>No temples found</h3>
+      <p>Try a different search term or clear the filters.</p>
+    </div>
+
+    <!-- Load more (grid view only) -->
+    <div id="load-more-wrap" style="display:none;">
+      <button class="btn-load-more" id="load-more-btn" onclick="loadMore()">
+        Load More Temples
+      </button>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>Paadal Petra Sthalams &mdash; 276 Shiva Temples of the Tevaram</p>
+    <p style="margin-top:6px;font-size:0.75rem;opacity:0.7;">
+      Praised by Thirugnana Sambandar, Appar, and Sundarar
+    </p>
+  </footer>
+
+  <!-- ── JavaScript ─────────────────────────────────────────── -->
+  <script>
+    /* ── Temple data ──────────────────────────────────────────
+       Replace the entries below with real temple data.
+       Each temple needs: id, official_name, location (city, district),
+       nayanmars (array), and optionally: history, tevaram, how_to_reach.
+    ── */
+    const TEMPLES = [
+      {
+        id: 1,
+        official_name: "Thillai Nataraja Temple",
+        location: { city: "Chidambaram", district: "Cuddalore" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 2,
+        official_name: "Arunachaleswarar Temple",
+        location: { city: "Tiruvannamalai", district: "Tiruvannamalai" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 3,
+        official_name: "Ekambareswarar Temple",
+        location: { city: "Kanchipuram", district: "Kanchipuram" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 4,
+        official_name: "Jambukeswarar Temple",
+        location: { city: "Thiruvanaikaval", district: "Tiruchirappalli" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 5,
+        official_name: "Brihadeeswarar Temple",
+        location: { city: "Thanjavur", district: "Thanjavur" },
+        nayanmars: ["appar", "sundarar"]
+      },
+      {
+        id: 6,
+        official_name: "Thyagarajar Temple",
+        location: { city: "Tiruvarur", district: "Tiruvarur" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 7,
+        official_name: "Kapaleeswarar Temple",
+        location: { city: "Mylapore, Chennai", district: "Chennai" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 8,
+        official_name: "Sirkazhi Brahmapureeswarar Temple",
+        location: { city: "Sirkazhi", district: "Mayiladuthurai" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 9,
+        official_name: "Amirthaghateswarar Temple",
+        location: { city: "Thirukkadavur", district: "Mayiladuthurai" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 10,
+        official_name: "Mahalingaswamy Temple",
+        location: { city: "Thiruvidaimarudur", district: "Mayiladuthurai" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 11,
+        official_name: "Darbaranyeswarar Temple",
+        location: { city: "Thirunallar", district: "Karaikal" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 12,
+        official_name: "Kayarohanaswamy Temple",
+        location: { city: "Nagapattinam", district: "Nagapattinam" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 13,
+        official_name: "Agneeswarar Temple",
+        location: { city: "Kanjanur", district: "Thanjavur" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 14,
+        official_name: "Sattainathar Temple",
+        location: { city: "Sirkazhi Thonipuram", district: "Mayiladuthurai" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 15,
+        official_name: "Kumbareswarar Temple",
+        location: { city: "Kumbakonam", district: "Thanjavur" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 16,
+        official_name: "Sarangapani Temple",
+        location: { city: "Kumbakonam", district: "Thanjavur" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 17,
+        official_name: "Airavatesvara Temple",
+        location: { city: "Darasuram", district: "Thanjavur" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 18,
+        official_name: "Naganathaswamy Temple",
+        location: { city: "Thirunageswaram", district: "Thanjavur" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 19,
+        official_name: "Panchanadeeswara Temple",
+        location: { city: "Thiruvaiyaru", district: "Thanjavur" },
+        nayanmars: ["sambandar", "appar", "sundarar"]
+      },
+      {
+        id: 20,
+        official_name: "Kailasanathar Temple",
+        location: { city: "Kanchipuram", district: "Kanchipuram" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 21,
+        official_name: "Vedagiriswarar Temple",
+        location: { city: "Thirukazhukundram", district: "Chengalpattu" },
+        nayanmars: ["sambandar", "appar"]
+      },
+      {
+        id: 22,
+        official_name: "Sthalasayana Perumal Temple",
+        location: { city: "Mahabalipuram", district: "Chengalpattu" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 23,
+        official_name: "Thenupureeswarar Temple",
+        location: { city: "Thirukolakka", district: "Mayiladuthurai" },
+        nayanmars: ["sambandar"]
+      },
+      {
+        id: 24,
+        official_name: "Temple 24",
+        location: { city: "To be filled", district: "To be filled" },
+        nayanmars: ["sambandar"]
+      }
+      /* Add remaining temples here following the same format */
+    ];
+
+    /* ── State ────────────────────────────────────────────────── */
+    let currentView   = 'grid';
+    let visibleCount  = 24;
+    const PAGE_SIZE   = 24;
+    let filteredList  = [...TEMPLES];
+
+    /* ── Init ─────────────────────────────────────────────────── */
+    window.addEventListener('DOMContentLoaded', () => {
+      populateDistrictFilter();
+      applyFiltersAndRender();
+      wireEvents();
+    });
+
+    /* ── Populate district dropdown from data ─────────────────── */
+    function populateDistrictFilter() {
+      const districts = [...new Set(TEMPLES.map(t => t.location.district))]
+        .filter(Boolean).sort();
+      const sel = document.getElementById('filter-district');
+      districts.forEach(d => {
+        const opt = document.createElement('option');
+        opt.value = d;
+        opt.textContent = d;
+        sel.appendChild(opt);
+      });
+    }
+
+    /* ── Wire up search + filter events ──────────────────────── */
+    let debounceTimer;
+    function wireEvents() {
+      document.getElementById('search-input').addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => { visibleCount = PAGE_SIZE; applyFiltersAndRender(); }, 280);
+      });
+      document.getElementById('filter-saint').addEventListener('change', () => {
+        visibleCount = PAGE_SIZE; applyFiltersAndRender();
+      });
+      document.getElementById('filter-district').addEventListener('change', () => {
+        visibleCount = PAGE_SIZE; applyFiltersAndRender();
+      });
+    }
+
+    /* ── Filter + sort ────────────────────────────────────────── */
+    function applyFiltersAndRender() {
+      const query    = document.getElementById('search-input').value.trim().toLowerCase();
+      const saint    = document.getElementById('filter-saint').value;
+      const district = document.getElementById('filter-district').value;
+
+      filteredList = TEMPLES.filter(t => {
+        const matchesSaint    = !saint    || t.nayanmars.includes(saint);
+        const matchesDistrict = !district || t.location.district === district;
+        const matchesQuery    = !query    || [
+          t.official_name,
+          t.location.city,
+          t.location.district
+        ].some(f => f && f.toLowerCase().includes(query));
+        return matchesSaint && matchesDistrict && matchesQuery;
+      });
+
+      // Sort A–Z by name
+      filteredList.sort((a, b) => a.official_name.localeCompare(b.official_name));
+
+      renderCurrent();
+    }
+
+    /* ── Render based on current view ─────────────────────────── */
+    function renderCurrent() {
+      if (currentView === 'grid') renderGrid();
+      else renderList();
+      updateResultCount();
+    }
+
+    /* ── Render grid view ─────────────────────────────────────── */
+    function renderGrid() {
+      const container = document.getElementById('temple-grid');
+      const slice = filteredList.slice(0, visibleCount);
+      container.innerHTML = '';
+
+      slice.forEach((t, idx) => {
+        const a = document.createElement('a');
+        a.className = 'temple-card';
+        a.href = `temple/?id=${t.id}`;
+        a.setAttribute('data-nayanmars', t.nayanmars.join(' '));
+
+        const nayamarColors = { sambandar: '#C0392B', appar: '#D4700A', sundarar: '#7B2D9E' };
+        const primaryNayanmar = t.nayanmars[0];
+        if (primaryNayanmar) a.style.borderLeftColor = nayamarColors[primaryNayanmar] || '';
+
+        a.innerHTML = `
+          <span class="card-number">#${String(t.id).padStart(3,'0')}</span>
+          <div class="card-name">${t.official_name}</div>
+          <div class="card-location">
+            <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            ${t.location.city}${t.location.district ? ', ' + t.location.district : ''}
+          </div>
+          <div class="card-badges">${t.nayanmars.map(n => `<span class="badge badge-${n}">${n.charAt(0).toUpperCase() + n.slice(1)}</span>`).join('')}</div>
+        `;
+        container.appendChild(a);
+      });
+
+      const loadMoreWrap = document.getElementById('load-more-wrap');
+      loadMoreWrap.style.display = filteredList.length > visibleCount ? 'block' : 'none';
+      document.getElementById('empty-state').classList.toggle('visible', filteredList.length === 0);
+    }
+
+    /* ── Render list view ─────────────────────────────────────── */
+    function renderList() {
+      const container = document.getElementById('temple-list');
+      container.innerHTML = '';
+
+      filteredList.forEach((t, idx) => {
+        const a = document.createElement('a');
+        a.className = 'temple-list-row';
+        a.href = `temple/?id=${t.id}`;
+        a.setAttribute('data-nayanmars', t.nayanmars.join(' '));
+
+        const nayamarColors = { sambandar: '#C0392B', appar: '#D4700A', sundarar: '#7B2D9E' };
+        const primaryNayanmar = t.nayanmars[0];
+        if (primaryNayanmar) a.style.borderLeftColor = nayamarColors[primaryNayanmar] || '';
+
+        a.innerHTML = `
+          <span class="list-num">${String(t.id).padStart(3,'0')}</span>
+          <span class="list-name">${t.official_name}</span>
+          <span class="list-location">${t.location.city}${t.location.district ? ', ' + t.location.district : ''}</span>
+          <span class="list-badges">${t.nayanmars.map(n => `<span class="badge badge-${n}">${n.charAt(0).toUpperCase() + n.slice(1)}</span>`).join('')}</span>
+          <span class="list-arrow">&rsaquo;</span>
+        `;
+        container.appendChild(a);
+      });
+
+      document.getElementById('empty-state').classList.toggle('visible', filteredList.length === 0);
+    }
+
+    /* ── Load more tiles ──────────────────────────────────────── */
+    function loadMore() {
+      visibleCount += PAGE_SIZE;
+      renderGrid();
+    }
+
+    /* ── Switch view (grid / list) ────────────────────────────── */
+    function setView(view) {
+      currentView = view;
+      document.body.classList.toggle('list-view', view === 'list');
+      document.getElementById('btn-grid').classList.toggle('active', view === 'grid');
+      document.getElementById('btn-list').classList.toggle('active', view === 'list');
+      renderCurrent();
+    }
+
+    /* ── Update result count label ────────────────────────────── */
+    function updateResultCount() {
+      const total = filteredList.length;
+      document.getElementById('result-count').textContent =
+        total === TEMPLES.length
+          ? `${total} temples`
+          : `${total} of ${TEMPLES.length} temples`;
+    }
+  </script>
+
+</body>
+</html>
