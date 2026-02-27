@@ -139,25 +139,6 @@
       font-size: 0.9rem;
       margin-bottom: 16px;
     }
-    .temple-badges {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .badge {
-      display: inline-block;
-      padding: 3px 10px;
-      border-radius: 99px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #fff;
-    }
-    .badge-sambandar { background: var(--sambandar); }
-    .badge-appar     { background: var(--appar); }
-    .badge-sundarar  { background: var(--sundarar); }
-
     /* -- Main content ----------------------------------------- */
     .main-content {
       max-width: 860px;
@@ -258,7 +239,6 @@
         </svg>
         <span id="temple-location-text"></span>
       </div>
-      <div class="temple-badges" id="temple-badges"></div>
     </div>
   </section>
 
@@ -272,48 +252,31 @@
   <!-- -- Main content ----------------------------------------- -->
   <main class="main-content" id="main-content" style="display:none;">
 
-    <!-- 1. History -->
+    <!-- 1. History + Hymns (external) -->
     <div class="temple-section">
       <div class="section-header">
-        <span class="section-icon">&#x1F4DC;</span>
-        <h2 class="section-title">History</h2>
+        <span class="section-icon">&#x1F517;</span>
+        <h2 class="section-title">History & Hymns</h2>
       </div>
-      <div class="section-body">
-        Content coming soon.
-      </div>
+      <div class="section-body" id="history-hymns-link-body">External source link will appear here.</div>
     </div>
 
-    <!-- 2. Hymns -->
-    <div class="temple-section">
-      <div class="section-header">
-        <span class="section-icon">&#x1F3B5;</span>
-        <h2 class="section-title">Hymns</h2>
-      </div>
-      <div class="section-body">
-        Content coming soon.
-      </div>
-    </div>
-
-    <!-- 3. How to Reach -->
+    <!-- 2. How to Reach -->
     <div class="temple-section">
       <div class="section-header">
         <span class="section-icon">&#x1F5FA;&#xFE0F;</span>
         <h2 class="section-title">How to Reach</h2>
       </div>
-      <div class="section-body">
-        Content coming soon.
-      </div>
+      <div class="section-body" id="reach-body">Content coming soon.</div>
     </div>
 
-    <!-- 4. References -->
+    <!-- 3. Visit Notes -->
     <div class="temple-section">
       <div class="section-header">
-        <span class="section-icon">&#x1F4DA;</span>
-        <h2 class="section-title">References</h2>
+        <span class="section-icon">&#x1F4DD;</span>
+        <h2 class="section-title">Visit Notes</h2>
       </div>
-      <div class="section-body">
-        Content coming soon.
-      </div>
+      <div class="section-body" id="visit-notes-body">Content coming soon.</div>
     </div>
 
   </main>
@@ -321,16 +284,66 @@
   <!-- -- Footer ----------------------------------------------- -->
   <footer class="site-footer">
     <p>Paadal Petra Sthalams &mdash; 276 Shiva Temples of the Tevaram</p>
-    <p style="margin-top:6px;font-size:0.75rem;opacity:0.7;">
-      Praised by Thirugnana Sambandar, Appar, and Sundarar
-    </p>
   </footer>
 
   <!-- -- Scripts ---------------------------------------------- -->
   <script src="../js/utils.js"></script>
   <script src="../js/data-loader.js"></script>
   <script>
-    const NAYANMAR_COLORS = { sambandar: '#C0392B', appar: '#D4700A', sundarar: '#7B2D9E' };
+    const SECTION_FALLBACK = 'Details are not added for this temple yet.';
+
+    function htmlEscape(value) {
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function renderTextSection(el, value) {
+      if (!el) return;
+      if (typeof value === 'string' && value.trim()) {
+        el.textContent = value.trim();
+        return;
+      }
+      if (Array.isArray(value) && value.length) {
+        el.innerHTML = `<ul>${value.map(item => `<li>${htmlEscape(item)}</li>`).join('')}</ul>`;
+        el.style.fontStyle = 'normal';
+        return;
+      }
+      el.textContent = SECTION_FALLBACK;
+    }
+
+    function getShaivamLink(temple) {
+      const direct =
+        temple.shaivam_url ||
+        temple.shaivamUrl ||
+        (temple.links && (temple.links.shaivam || temple.links.shaivam_url));
+      if (direct) return direct;
+
+      const q = encodeURIComponent(`site:shaivam.org ${temple.official_name} ${temple.location.city} temple history hymns`);
+      return `https://www.google.com/search?q=${q}`;
+    }
+
+    function renderHistoryHymnsLink(el, temple) {
+      if (!el) return;
+      const url = getShaivamLink(temple);
+      const hasDirect =
+        Boolean(temple.shaivam_url) ||
+        Boolean(temple.shaivamUrl) ||
+        Boolean(temple.links && (temple.links.shaivam || temple.links.shaivam_url));
+
+      const label = hasDirect ? 'Read History & Hymns on Shaivam' : 'Find History & Hymns on Shaivam';
+      el.innerHTML = `
+        <p style="margin:0 0 10px 0;font-style:normal;">
+          This section is maintained externally on Shaivam.
+        </p>
+        <p style="margin:0;font-style:normal;">
+          <a href="${htmlEscape(url)}" target="_blank" rel="noopener noreferrer">${label}</a>
+        </p>
+      `;
+    }
 
     async function init() {
       const id = getQueryParam('id');
@@ -352,20 +365,9 @@
       if (temple.location.district) locParts.push(temple.location.district);
       document.getElementById('temple-location-text').textContent = locParts.join(', ');
 
-      const badgesEl = document.getElementById('temple-badges');
-      temple.nayanmars.forEach(n => {
-        const span = document.createElement('span');
-        span.className = `badge badge-${n}`;
-        span.textContent = n.charAt(0).toUpperCase() + n.slice(1);
-        badgesEl.appendChild(span);
-      });
-
-      // Color the hero border accent using primary nayanmar
-      const primary = temple.nayanmars[0];
-      if (primary && NAYANMAR_COLORS[primary]) {
-        document.querySelector('.temple-hero').style.borderBottom =
-          `4px solid ${NAYANMAR_COLORS[primary]}`;
-      }
+      renderHistoryHymnsLink(document.getElementById('history-hymns-link-body'), temple);
+      renderTextSection(document.getElementById('reach-body'), temple.how_to_reach ?? temple.howToReach);
+      renderTextSection(document.getElementById('visit-notes-body'), temple.visit_notes ?? temple.visitNotes);
 
       document.getElementById('temple-hero').style.display = '';
       document.getElementById('main-content').style.display = '';

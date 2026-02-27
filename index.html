@@ -131,27 +131,6 @@
       text-transform: uppercase;
       margin-bottom: 32px;
     }
-    .hero-stats {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .stat-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 16px;
-      border-radius: 99px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .stat-pill.sambandar { background: rgba(192,57,43,0.5); color: #FFD5D0; }
-    .stat-pill.appar     { background: rgba(212,112,10,0.5); color: #FFE8CC; }
-    .stat-pill.sundarar  { background: rgba(123,45,158,0.5); color: #EDD5FF; }
-
     /* -- Search + Filter bar --------------------------------- */
     .controls-bar {
       background: var(--cream);
@@ -284,10 +263,6 @@
       box-shadow: 0 6px 20px rgba(44,24,16,0.18);
       background: var(--gold-light);
     }
-    .temple-card[data-nayanmars~="sambandar"] { border-left-color: var(--sambandar); }
-    .temple-card[data-nayanmars~="appar"]     { border-left-color: var(--appar); }
-    .temple-card[data-nayanmars~="sundarar"]  { border-left-color: var(--sundarar); }
-
     .card-number {
       position: absolute;
       top: 10px;
@@ -310,26 +285,6 @@
       align-items: center;
       gap: 4px;
     }
-    .card-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-top: 2px;
-    }
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 99px;
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #fff;
-    }
-    .badge-sambandar { background: var(--sambandar); }
-    .badge-appar     { background: var(--appar); }
-    .badge-sundarar  { background: var(--sundarar); }
-
     /* -- List view ------------------------------------------- */
     .temple-list { display: none; }
     .temple-list-row {
@@ -350,10 +305,6 @@
       background: var(--gold-light);
       transform: translateX(3px);
     }
-    .temple-list-row[data-nayanmars~="sambandar"] { border-left-color: var(--sambandar); }
-    .temple-list-row[data-nayanmars~="appar"]     { border-left-color: var(--appar); }
-    .temple-list-row[data-nayanmars~="sundarar"]  { border-left-color: var(--sundarar); }
-
     .list-num {
       font-size: 0.75rem;
       color: var(--text-muted);
@@ -371,11 +322,6 @@
       font-size: 0.78rem;
       color: var(--text-muted);
       width: 160px;
-      flex-shrink: 0;
-    }
-    .list-badges {
-      display: flex;
-      gap: 4px;
       flex-shrink: 0;
     }
     .list-arrow {
@@ -474,11 +420,6 @@
       <span class="hero-om">&#x0950;</span>
       <h1 class="hero-title">Paadal Petra Sthalams</h1>
       <p class="hero-subtitle">276 Sacred Shiva Temples of the Tevaram</p>
-      <div class="hero-stats">
-        <span class="stat-pill sambandar">&#9670; Sambandar &mdash; 216 Temples</span>
-        <span class="stat-pill appar">&#9670; Appar &mdash; 135 Temples</span>
-        <span class="stat-pill sundarar">&#9670; Sundarar &mdash; 100 Temples</span>
-      </div>
     </div>
   </section>
 
@@ -500,13 +441,6 @@
     </div>
 
     <!-- Filters -->
-    <select id="filter-saint" class="filter-select" title="Filter by Nayanmar">
-      <option value="">All Nayanmars</option>
-      <option value="sambandar">Sambandar</option>
-      <option value="appar">Appar</option>
-      <option value="sundarar">Sundarar</option>
-    </select>
-
     <select id="filter-area" class="filter-select" title="Filter by region">
       <option value="">All Regions</option>
       <option value="Chola Nadu (North of Kaveri)">Chola Nadu - North of Kaveri</option>
@@ -574,9 +508,6 @@
   <!-- -- Footer ----------------------------------------------- -->
   <footer class="site-footer">
     <p>Paadal Petra Sthalams &mdash; 276 Shiva Temples of the Tevaram</p>
-    <p style="margin-top:6px;font-size:0.75rem;opacity:0.7;">
-      Praised by Thirugnana Sambandar, Appar, and Sundarar
-    </p>
   </footer>
 
   <!-- -- JavaScript ------------------------------------------- -->
@@ -910,9 +841,6 @@
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => { visibleCount = PAGE_SIZE; applyFiltersAndRender(); }, 280);
       });
-      document.getElementById('filter-saint').addEventListener('change', () => {
-        visibleCount = PAGE_SIZE; applyFiltersAndRender();
-      });
       document.getElementById('filter-area').addEventListener('change', () => {
         visibleCount = PAGE_SIZE; applyFiltersAndRender();
       });
@@ -924,12 +852,10 @@
     /* -- Filter + sort ------------------------------------------ */
     function applyFiltersAndRender() {
       const query    = document.getElementById('search-input').value.trim().toLowerCase();
-      const saint    = document.getElementById('filter-saint').value;
       const area     = document.getElementById('filter-area').value;
       const district = document.getElementById('filter-district').value;
 
       filteredList = TEMPLES.filter(t => {
-        const matchesSaint    = !saint    || t.nayanmars.includes(saint);
         const matchesArea     = !area     || t.area === area;
         const matchesDistrict = !district || t.location.district === district;
         const matchesQuery    = !query    || [
@@ -937,7 +863,7 @@
           t.location.city,
           t.location.district
         ].some(f => f && f.toLowerCase().includes(query));
-        return matchesSaint && matchesArea && matchesDistrict && matchesQuery;
+        return matchesArea && matchesDistrict && matchesQuery;
       });
 
       // Sort A-Z by name
@@ -963,11 +889,6 @@
         const a = document.createElement('a');
         a.className = 'temple-card';
         a.href = `temple/?id=${t.id}`;
-        a.setAttribute('data-nayanmars', t.nayanmars.join(' '));
-
-        const nayamarColors = { sambandar: '#C0392B', appar: '#D4700A', sundarar: '#7B2D9E' };
-        const primaryNayanmar = t.nayanmars[0];
-        if (primaryNayanmar) a.style.borderLeftColor = nayamarColors[primaryNayanmar] || '';
 
         a.innerHTML = `
           <span class="card-number">#${String(t.id).padStart(3,'0')}</span>
@@ -976,7 +897,6 @@
             <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
             ${t.location.city}${t.location.district ? ', ' + t.location.district : ''}
           </div>
-          <div class="card-badges">${t.nayanmars.map(n => `<span class="badge badge-${n}">${n.charAt(0).toUpperCase() + n.slice(1)}</span>`).join('')}</div>
         `;
         container.appendChild(a);
       });
@@ -995,17 +915,11 @@
         const a = document.createElement('a');
         a.className = 'temple-list-row';
         a.href = `temple/?id=${t.id}`;
-        a.setAttribute('data-nayanmars', t.nayanmars.join(' '));
-
-        const nayamarColors = { sambandar: '#C0392B', appar: '#D4700A', sundarar: '#7B2D9E' };
-        const primaryNayanmar = t.nayanmars[0];
-        if (primaryNayanmar) a.style.borderLeftColor = nayamarColors[primaryNayanmar] || '';
 
         a.innerHTML = `
           <span class="list-num">${String(t.id).padStart(3,'0')}</span>
           <span class="list-name">${t.official_name}</span>
           <span class="list-location">${t.location.city}${t.location.district ? ', ' + t.location.district : ''}</span>
-          <span class="list-badges">${t.nayanmars.map(n => `<span class="badge badge-${n}">${n.charAt(0).toUpperCase() + n.slice(1)}</span>`).join('')}</span>
           <span class="list-arrow">&rsaquo;</span>
         `;
         container.appendChild(a);
