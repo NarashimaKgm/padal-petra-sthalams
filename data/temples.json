@@ -1,0 +1,3073 @@
+[
+  {
+    "id": 1,
+    "official_name": "Vaithiyanathaswamy Temple",
+    "location": {
+      "city": "Thirumazhapadi",
+      "district": "Ariyalur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 2,
+    "official_name": "Alanduraiyar Temple",
+    "location": {
+      "city": "Keezhapaluvur",
+      "district": "Ariyalur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 3,
+    "official_name": "Thillai Nataraja Temple",
+    "location": {
+      "city": "Chidambaram",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 4,
+    "official_name": "Paasupatheeswarar Temple",
+    "location": {
+      "city": "Thiruvedikalam",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 5,
+    "official_name": "Uchinathar Temple",
+    "location": {
+      "city": "Sivapuri",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 6,
+    "official_name": "Balavannanathar Temple",
+    "location": {
+      "city": "Thirukkazhippalai",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 7,
+    "official_name": "Pranava Vyagrapuriswarar Temple",
+    "location": {
+      "city": "Omampuliyur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 8,
+    "official_name": "Padanjaliswarar Temple",
+    "location": {
+      "city": "Kanattampuliyur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 9,
+    "official_name": "Soundaryeswarar Temple",
+    "location": {
+      "city": "Thirunaraiyur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 10,
+    "official_name": "Amirthakatheeswarar Temple",
+    "location": {
+      "city": "Melakkadambur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 11,
+    "official_name": "Paasupatheeswarar Temple",
+    "location": {
+      "city": "Panthalloor",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 12,
+    "official_name": "Agneeswarar Temple",
+    "location": {
+      "city": "Kanjanur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 13,
+    "official_name": "Koteeswarar Temple",
+    "location": {
+      "city": "Thirukkodikaval",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 14,
+    "official_name": "Prananatheswarar Temple",
+    "location": {
+      "city": "Thirumangalakudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 15,
+    "official_name": "Arunajadeswarar Temple",
+    "location": {
+      "city": "Thiruppanandal",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 16,
+    "official_name": "Baluganathar Temple",
+    "location": {
+      "city": "Thiruvaiyapadi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 17,
+    "official_name": "Sathiyagireeswarar Temple",
+    "location": {
+      "city": "Senganoor",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 18,
+    "official_name": "Karkadeswarar Temple",
+    "location": {
+      "city": "Thirundudevankudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 19,
+    "official_name": "Yoganandeeswarar Temple",
+    "location": {
+      "city": "Thiruvisanallur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 20,
+    "official_name": "Koteeswarar Kailasanathar Temple",
+    "location": {
+      "city": "Kottaiyur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 21,
+    "official_name": "Ezhutharinathar Temple",
+    "location": {
+      "city": "Innamboor",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 22,
+    "official_name": "Satchinatheswarar Temple",
+    "location": {
+      "city": "Thiruppurambiyam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 23,
+    "official_name": "Vijayanatheswarar Temple",
+    "location": {
+      "city": "Thiruvaiyamangai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 24,
+    "official_name": "Vilvavaneshwarar Temple",
+    "location": {
+      "city": "Thiruvaikavoor",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 25,
+    "official_name": "Dayanidheeswarar Temple",
+    "location": {
+      "city": "Vadakurangaduthurai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 26,
+    "official_name": "Abathsagayeswarar Temple",
+    "location": {
+      "city": "Thirupazhanam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 27,
+    "official_name": "Panchanadeeswara Temple",
+    "location": {
+      "city": "Thiruvaiyaru",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 28,
+    "official_name": "Neyyadiyappar Temple",
+    "location": {
+      "city": "Thillaiasthanam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 29,
+    "official_name": "Vyagrapureeswarar Temple",
+    "location": {
+      "city": "Thirupperumbiyur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 30,
+    "official_name": "Semmeninathar Temple",
+    "location": {
+      "city": "Thirukkanur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 31,
+    "official_name": "Sathiyavakeeswarar Temple",
+    "location": {
+      "city": "Anbil",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 32,
+    "official_name": "Amravaneswarar Temple",
+    "location": {
+      "city": "Mandurai",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 33,
+    "official_name": "Adhimouleeswarar Temple",
+    "location": {
+      "city": "Thiruppatthurai",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 34,
+    "official_name": "Jambukeswarar Temple",
+    "location": {
+      "city": "Thiruvanaikaval",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 35,
+    "official_name": "Gneelivaneswarar Temple",
+    "location": {
+      "city": "Thiruppainjeeli",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 36,
+    "official_name": "Matruravaradeeswarar Temple",
+    "location": {
+      "city": "Thiruvasi",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 37,
+    "official_name": "Maragathaleswarar Temple",
+    "location": {
+      "city": "Ingoimalai",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 38,
+    "official_name": "Shivalokathyagar Temple",
+    "location": {
+      "city": "Achchampuram",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 39,
+    "official_name": "Thirumeniyazhagar Temple",
+    "location": {
+      "city": "Makendrapalli",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 40,
+    "official_name": "Mullai Vananathar Temple",
+    "location": {
+      "city": "Thirumullaivasal",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 41,
+    "official_name": "Sundareswarar Temple",
+    "location": {
+      "city": "Annapanpettai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 42,
+    "official_name": "Saiyaveswarar Temple",
+    "location": {
+      "city": "Saiyavanam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 43,
+    "official_name": "Pallavaneswarar Temple",
+    "location": {
+      "city": "Poompukar",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 44,
+    "official_name": "Swetharanyeswarar Temple",
+    "location": {
+      "city": "Thiruvenkadu",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 45,
+    "official_name": "Aranyeswarar Temple",
+    "location": {
+      "city": "Thirukkattupalli",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 46,
+    "official_name": "Velladainathar Temple",
+    "location": {
+      "city": "Thirukkuruvaikavoor",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 47,
+    "official_name": "Sattainathar Temple",
+    "location": {
+      "city": "Sirkazhi",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 48,
+    "official_name": "Sapthapureeswarar Temple",
+    "location": {
+      "city": "Thirukolakka",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 49,
+    "official_name": "Vaitheeswaran Temple",
+    "location": {
+      "city": "Vaitheeswaran Kovil",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 50,
+    "official_name": "Kannayiramudaiyar Temple",
+    "location": {
+      "city": "Kurumanakkudi",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 51,
+    "official_name": "Kadaimudinathar Temple",
+    "location": {
+      "city": "Keelaiyur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 52,
+    "official_name": "Mahalatchumeeswarar Temple",
+    "location": {
+      "city": "Thirunindriyur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 53,
+    "official_name": "Shivalokanathar Temple",
+    "location": {
+      "city": "Thirupunkoor",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 54,
+    "official_name": "Somanathar Temple",
+    "location": {
+      "city": "Needur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 55,
+    "official_name": "Apatsakayeswarar Temple",
+    "location": {
+      "city": "Ponnoor",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 56,
+    "official_name": "Kalyana Sundareswarar Temple",
+    "location": {
+      "city": "Thiruvelvikudi",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 57,
+    "official_name": "Airavatheswarar Temple",
+    "location": {
+      "city": "Melathirumananjeri",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 58,
+    "official_name": "Uthvaganathar Temple",
+    "location": {
+      "city": "Thirumananjeri",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 59,
+    "official_name": "Veerateswarar Temple",
+    "location": {
+      "city": "Korukkai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 60,
+    "official_name": "Kutram Poruthanathar Temple",
+    "location": {
+      "city": "Thalainayiru",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 61,
+    "official_name": "Kunthaleeswarar Temple",
+    "location": {
+      "city": "Thirukkurakka",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 62,
+    "official_name": "Manikkavannar Temple",
+    "location": {
+      "city": "Thiruvalapputhur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 63,
+    "official_name": "Neelakandeswarar Temple",
+    "location": {
+      "city": "Iluppai Pattu",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 64,
+    "official_name": "Kadambavaaneswarar Temple",
+    "location": {
+      "city": "Kulithalai",
+      "district": "Karur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 65,
+    "official_name": "Rathinagireeswarar Temple",
+    "location": {
+      "city": "Ayyar Malai",
+      "district": "Karur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 66,
+    "official_name": "Darbaranyeswarar Temple",
+    "location": {
+      "city": "Thirunallar",
+      "district": "Karaikal"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 67,
+    "official_name": "Agneeswarar Temple",
+    "location": {
+      "city": "Thirukkattupalli",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 68,
+    "official_name": "Amirdhakalasamudayar Temple",
+    "location": {
+      "city": "Sakkottai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 69,
+    "official_name": "Atmanatheswarar Temple",
+    "location": {
+      "city": "Thiruvalampozhil",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 70,
+    "official_name": "Apatsakayeswarar Temple",
+    "location": {
+      "city": "Aaduthurai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 71,
+    "official_name": "Apatsakayeswarar Temple",
+    "location": {
+      "city": "Alangudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 72,
+    "official_name": "Kumbareswarar Temple",
+    "location": {
+      "city": "Kumbakonam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 73,
+    "official_name": "Gokileswarar Temple",
+    "location": {
+      "city": "Thirukkozhiyur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 74,
+    "official_name": "Sakkaravaageswarar Temple",
+    "location": {
+      "city": "Sakkarapalli",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 75,
+    "official_name": "Sarkunalingeswarar Temple",
+    "location": {
+      "city": "Kurukkudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 76,
+    "official_name": "Saraparameswarar Temple",
+    "location": {
+      "city": "Thirucherai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 77,
+    "official_name": "Sitthanatheswarar Temple",
+    "location": {
+      "city": "Thirunaraiyur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 78,
+    "official_name": "Sivagurunathar Temple",
+    "location": {
+      "city": "Sivapuram",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 79,
+    "official_name": "Sivakozhuntheeswarar Temple",
+    "location": {
+      "city": "Thirucchathimur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 80,
+    "official_name": "Sivanandheswarar Temple",
+    "location": {
+      "city": "Thiruppanthurai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 81,
+    "official_name": "Someeswarar Temple",
+    "location": {
+      "city": "Keelapalayam Vadathali",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 82,
+    "official_name": "Someeswarar Temple",
+    "location": {
+      "city": "Kumbakonam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 83,
+    "official_name": "Sottuthurai Nathar Temple",
+    "location": {
+      "city": "Thirucchottuthurai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 84,
+    "official_name": "Jnanaparameswarar Temple",
+    "location": {
+      "city": "Tirumeignanam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 85,
+    "official_name": "Thiruvalanjuzhinathar Temple",
+    "location": {
+      "city": "Thiruvalanjuzhi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 86,
+    "official_name": "Thenupeeswarar Temple",
+    "location": {
+      "city": "Pattiswaram",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 87,
+    "official_name": "Nageswarar Temple",
+    "location": {
+      "city": "Thirunageswaram",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 88,
+    "official_name": "Neelakandeswarar Temple",
+    "location": {
+      "city": "Thiruneelakudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 89,
+    "official_name": "Pasupatheeswarar Temple",
+    "location": {
+      "city": "Pasupathikoil",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 90,
+    "official_name": "Pasupatheeswarar Temple",
+    "location": {
+      "city": "Avoor",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 91,
+    "official_name": "Panchavarneeswarar Temple",
+    "location": {
+      "city": "Nallur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 92,
+    "official_name": "Padikasunathar Temple",
+    "location": {
+      "city": "Alagaputhur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 93,
+    "official_name": "Palaiyavaneswarar Temple",
+    "location": {
+      "city": "Papanasam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 94,
+    "official_name": "Paschakareeswarar Temple",
+    "location": {
+      "city": "Parithiyappar Kovil",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 95,
+    "official_name": "Brammasiragandeeswarar Temple",
+    "location": {
+      "city": "Kandiyur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 96,
+    "official_name": "Pushpavaneswarar Temple",
+    "location": {
+      "city": "Melaidhripoonthuruthi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 97,
+    "official_name": "Mahalingeswarar Temple",
+    "location": {
+      "city": "Thiruvidaimarudur",
+      "district": "Mayiladuthurai"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 98,
+    "official_name": "Mullai Vananathar Temple",
+    "location": {
+      "city": "Thirukkarugavur",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 99,
+    "official_name": "Vasishteeswarar Temple",
+    "location": {
+      "city": "Tenkudithittai",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 100,
+    "official_name": "Vedhapureeswarar Temple",
+    "location": {
+      "city": "Thiruvedikudi",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 101,
+    "official_name": "Nageswaran Temple",
+    "location": {
+      "city": "Kudanthai Keezhkkottam",
+      "district": "Thanjavur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 102,
+    "official_name": "Erumpiswarar Temple",
+    "location": {
+      "city": "Thiruverumbur",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 103,
+    "official_name": "Thayumanavar Temple",
+    "location": {
+      "city": "Tiruchirappalli",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 104,
+    "official_name": "Netungalanathar Temple",
+    "location": {
+      "city": "Tirunetungal",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 105,
+    "official_name": "Panchavarneswarar Temple",
+    "location": {
+      "city": "Uraiyur",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 106,
+    "official_name": "Paraythurainathar Temple",
+    "location": {
+      "city": "Tiruparaythurai",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 107,
+    "official_name": "Ujjeevanathar Temple",
+    "location": {
+      "city": "Uyyakondan Malai",
+      "district": "Tiruchirappalli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 108,
+    "official_name": "Agileswarar Temple",
+    "location": {
+      "city": "Thiruvarur Araneri",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 109,
+    "official_name": "Agneeswarar Temple",
+    "location": {
+      "city": "Anniyur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 110,
+    "official_name": "Agneeswarar Temple",
+    "location": {
+      "city": "Thirukollakadu",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 111,
+    "official_name": "Abimuktheeswarar Temple",
+    "location": {
+      "city": "Manakkal Iyambettai",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 112,
+    "official_name": "Uthirapachupatheeswarar Temple",
+    "location": {
+      "city": "Tiruchengattangudi",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 113,
+    "official_name": "Airavateeswarar Temple",
+    "location": {
+      "city": "Tirukkottaram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 114,
+    "official_name": "Kannayiranathar Temple",
+    "location": {
+      "city": "Tirukkaravasal",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 115,
+    "official_name": "Karaveeranathar Temple",
+    "location": {
+      "city": "Karaiveeram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 116,
+    "official_name": "Karpaganathar Temple",
+    "location": {
+      "city": "Karpaganatharkulam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 117,
+    "official_name": "Kediliyappar Temple",
+    "location": {
+      "city": "Keelvelur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 118,
+    "official_name": "Kaichinneswarar Temple",
+    "location": {
+      "city": "Kachanam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 119,
+    "official_name": "Koluntheeswarar Temple",
+    "location": {
+      "city": "Kottur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 120,
+    "official_name": "Koneswarar Temple",
+    "location": {
+      "city": "Kudavasal",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 121,
+    "official_name": "Sakalabhuvaneswarar Temple",
+    "location": {
+      "city": "Thirumiyachur Ilankovil",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 122,
+    "official_name": "Sathurangavallabhanathar Temple",
+    "location": {
+      "city": "Puvanoor",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 123,
+    "official_name": "Sundareswarar Temple",
+    "location": {
+      "city": "Tiruppanaiyur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 124,
+    "official_name": "Sargunanathar Temple",
+    "location": {
+      "city": "Idumbavanam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 125,
+    "official_name": "Sarguneswarar Temple",
+    "location": {
+      "city": "Karuveli",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 126,
+    "official_name": "Satchinathar Temple",
+    "location": {
+      "city": "Avalivanallur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 127,
+    "official_name": "Sushmapureeswarar Temple",
+    "location": {
+      "city": "Cherukudi",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 128,
+    "official_name": "Seshapureeswarar Temple",
+    "location": {
+      "city": "Thirupampuram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 129,
+    "official_name": "Sornapureeswarar Temple",
+    "location": {
+      "city": "Andankovil",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 130,
+    "official_name": "Thyagarajar Temple",
+    "location": {
+      "city": "Thiruvarur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 131,
+    "official_name": "Dhoovay Nathar Temple",
+    "location": {
+      "city": "Dhoovanaynar Kovil",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 132,
+    "official_name": "Devapureeswarar Temple",
+    "location": {
+      "city": "Devur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 133,
+    "official_name": "Naduthariyappar Temple",
+    "location": {
+      "city": "Kovil Kannapuram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 134,
+    "official_name": "Narthanapureeswarar Temple",
+    "location": {
+      "city": "Thiruthalaiyankadu",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 135,
+    "official_name": "Naganathar Temple",
+    "location": {
+      "city": "Pamani",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 136,
+    "official_name": "Neelnethinathar Temple",
+    "location": {
+      "city": "Thandalacheri",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 137,
+    "official_name": "Nellivananathar Temple",
+    "location": {
+      "city": "Thirunelikka",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 138,
+    "official_name": "Pasupatheeswarar Temple",
+    "location": {
+      "city": "Thirukondeeswaram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 139,
+    "official_name": "Padanjali Manogarar Temple",
+    "location": {
+      "city": "Vilamal",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 140,
+    "official_name": "Padaleeswarar Temple",
+    "location": {
+      "city": "Aritthuvaramangalam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 141,
+    "official_name": "Parijathavaneswarar Temple",
+    "location": {
+      "city": "Thirukkalar",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 142,
+    "official_name": "Brammapureeswarar Temple",
+    "location": {
+      "city": "Ampar-Ampal",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 143,
+    "official_name": "Ponvaithanathar Temple",
+    "location": {
+      "city": "Chithayamoor",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 144,
+    "official_name": "Mahakalanathar Temple",
+    "location": {
+      "city": "Thirumakalam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 145,
+    "official_name": "Madhuvaneswarar Temple",
+    "location": {
+      "city": "Nannilam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 146,
+    "official_name": "Manthirapureeswarar Temple",
+    "location": {
+      "city": "Kovilur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 147,
+    "official_name": "Mugkoodal Thirunethranathar Temple",
+    "location": {
+      "city": "Thirupalli",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 148,
+    "official_name": "Muktheeswarar Temple",
+    "location": {
+      "city": "Sithalapathi",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 149,
+    "official_name": "Meghanathar Temple",
+    "location": {
+      "city": "Thirumiyachur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 150,
+    "official_name": "Rathinapureeswarar Temple",
+    "location": {
+      "city": "Thirunattiyathankudi",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 151,
+    "official_name": "Ramanathar Temple",
+    "location": {
+      "city": "Thirukkanapuram",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 152,
+    "official_name": "Vandurai Nathar Temple",
+    "location": {
+      "city": "Thiruvanduthurai",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 153,
+    "official_name": "Vardhamaneeswarar Temple",
+    "location": {
+      "city": "Thiruppugalur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 154,
+    "official_name": "Vanjinathar Temple",
+    "location": {
+      "city": "Sri Vanjiyam",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 155,
+    "official_name": "Vilvaranyeswarar Temple",
+    "location": {
+      "city": "Thirukollampudur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 156,
+    "official_name": "Veerattaneswarar Temple",
+    "location": {
+      "city": "Thiruvirkudi",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 157,
+    "official_name": "Velinatheswarar Temple",
+    "location": {
+      "city": "Thiruvizhimizhalai",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 158,
+    "official_name": "Vennikarumbeswarar Temple",
+    "location": {
+      "city": "Kovilvenni",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 159,
+    "official_name": "Vellimalainathar Temple",
+    "location": {
+      "city": "Thiruthangur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 160,
+    "official_name": "Jagatheeswarar Temple",
+    "location": {
+      "city": "Okkaipperaiyur",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 161,
+    "official_name": "Aktheeswarar Temple",
+    "location": {
+      "city": "Agasthiyan Palli",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 162,
+    "official_name": "Agneeswarar Temple",
+    "location": {
+      "city": "Thiruppugalur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 163,
+    "official_name": "Amirthakadeswarar Temple",
+    "location": {
+      "city": "Thirukkadaiyur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 164,
+    "official_name": "Ayavantheeswarar Temple",
+    "location": {
+      "city": "Seeyathamangai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 165,
+    "official_name": "Ucchiravaneswarar Temple",
+    "location": {
+      "city": "Thiruvilankadu",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 166,
+    "official_name": "Uththavadeeswarar Temple",
+    "location": {
+      "city": "Kuthalam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 167,
+    "official_name": "Uma Maheswara Swamy Temple",
+    "location": {
+      "city": "Konerirajapuram",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 168,
+    "official_name": "Gayaroganeshwarar Temple",
+    "location": {
+      "city": "Nagapattinam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 169,
+    "official_name": "Kodikkuzhagar Temple",
+    "location": {
+      "city": "Kodiyakkadu",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 170,
+    "official_name": "Komuktheeswarar Temple",
+    "location": {
+      "city": "Thiruvavaduthurai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 171,
+    "official_name": "Sankaranyeswarar Temple",
+    "location": {
+      "city": "Thalaisangankadu",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 172,
+    "official_name": "Swarnapureeswarar Temple",
+    "location": {
+      "city": "Sembponarkovil",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 173,
+    "official_name": "Thanthondeeswarar Temple",
+    "location": {
+      "city": "Akkur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 174,
+    "official_name": "Thiruppayathu Nathar Temple",
+    "location": {
+      "city": "Thiruppayathankudi",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 175,
+    "official_name": "Swetharanyeswarar Temple",
+    "location": {
+      "city": "Vedaranyam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 176,
+    "official_name": "Navaneetheswarar Temple",
+    "location": {
+      "city": "Chikkal",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 177,
+    "official_name": "Nattrunaiyappar Temple",
+    "location": {
+      "city": "Punjaai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 178,
+    "official_name": "Brahmapureeswarar Temple",
+    "location": {
+      "city": "Thirumayanam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 179,
+    "official_name": "Brahmapureeswarar Temple",
+    "location": {
+      "city": "Thirukkuvalai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 180,
+    "official_name": "Manaththunai Nathar Temple",
+    "location": {
+      "city": "Valivalam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 181,
+    "official_name": "Mayuranathar Temple",
+    "location": {
+      "city": "Mayiladuthurai",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 182,
+    "official_name": "Rathinagireeswarar Temple",
+    "location": {
+      "city": "Thirumarugal",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 183,
+    "official_name": "Valampurinathar Temple",
+    "location": {
+      "city": "Mela Perumpallam",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 184,
+    "official_name": "Vaimoornathar Temple",
+    "location": {
+      "city": "Thiruvaimur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 185,
+    "official_name": "Veeraateswarar Temple",
+    "location": {
+      "city": "Keelaparasalur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 186,
+    "official_name": "Vedapureeswarar Temple",
+    "location": {
+      "city": "Therazhundur",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 187,
+    "official_name": "Vaigalnathar Temple",
+    "location": {
+      "city": "Thiruvaiykal",
+      "district": "Nagapattinam"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 188,
+    "official_name": "Sundareswarar Temple",
+    "location": {
+      "city": "Thiruvedhikudi",
+      "district": "Puducherry"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 189,
+    "official_name": "Parvathiswarar Temple",
+    "location": {
+      "city": "Thiruthalacherry",
+      "district": "Puducherry"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 190,
+    "official_name": "Yazhmoorinathar Temple",
+    "location": {
+      "city": "Tharumapuram",
+      "district": "Puducherry"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 191,
+    "official_name": "Punniyakodiyappar Temple",
+    "location": {
+      "city": "Thiruvidai Vasal",
+      "district": "Thiruvarur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 192,
+    "official_name": "Koneswaram Temple",
+    "location": {
+      "city": "Trincomalee",
+      "district": "Sri Lanka"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 193,
+    "official_name": "Thirukketheeswaram Temple",
+    "location": {
+      "city": "Mannar",
+      "district": "Sri Lanka"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 194,
+    "official_name": "Kodunkundranathar Temple",
+    "location": {
+      "city": "Piranmalai",
+      "district": "Sivaganga"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 195,
+    "official_name": "Thiruthalinathar Temple",
+    "location": {
+      "city": "Tirupattur",
+      "district": "Sivaganga"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 196,
+    "official_name": "Kalayar Koil Temple",
+    "location": {
+      "city": "Kalaiyar Kovil",
+      "district": "Sivaganga"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 197,
+    "official_name": "Pushpavaneswarar Temple",
+    "location": {
+      "city": "Thirupuvanam",
+      "district": "Sivaganga"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 198,
+    "official_name": "Kutralanathar Temple",
+    "location": {
+      "city": "Kuttralam",
+      "district": "Tirunelveli"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 199,
+    "official_name": "Nellaiappar Temple",
+    "location": {
+      "city": "Tirunelveli",
+      "district": "Tirunelveli"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 200,
+    "official_name": "Thiruppunavasal Temple",
+    "location": {
+      "city": "Thiruppunavasal",
+      "district": "Pudukkottai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 201,
+    "official_name": "Meenakshi Sundareswarar Temple",
+    "location": {
+      "city": "Madurai",
+      "district": "Madurai"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 202,
+    "official_name": "Thiruvappudaiyar Temple",
+    "location": {
+      "city": "Cellur",
+      "district": "Madurai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 203,
+    "official_name": "Sathyakireeswarar Temple",
+    "location": {
+      "city": "Thiruparankundram",
+      "district": "Madurai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 204,
+    "official_name": "Thiruvedagam Nathar Temple",
+    "location": {
+      "city": "Thiruvedagam",
+      "district": "Madurai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 205,
+    "official_name": "Ramanathaswamy Temple",
+    "location": {
+      "city": "Rameswaram",
+      "district": "Ramanathapuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 206,
+    "official_name": "Thiruvadanai Temple",
+    "location": {
+      "city": "Thiruvadanai",
+      "district": "Ramanathapuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 207,
+    "official_name": "Bhuminathar Temple",
+    "location": {
+      "city": "Tiruchuli",
+      "district": "Virudhunagar"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 208,
+    "official_name": "Avinasippar Temple",
+    "location": {
+      "city": "Avinashi",
+      "district": "Tiruppur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 209,
+    "official_name": "Thirumuruganathar Temple",
+    "location": {
+      "city": "Thirumuruganpundi",
+      "district": "Tiruppur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 210,
+    "official_name": "Sangameswarar Temple",
+    "location": {
+      "city": "Bhavani",
+      "district": "Erode"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 211,
+    "official_name": "Arthanareeswarar Temple",
+    "location": {
+      "city": "Thiruchengode",
+      "district": "Namakkal"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 212,
+    "official_name": "Kalyana Vikirtheeswarar Temple",
+    "location": {
+      "city": "Venjamangudalur",
+      "district": "Karur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 213,
+    "official_name": "Kodumudinathar Temple",
+    "location": {
+      "city": "Kodumudi",
+      "district": "Erode"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 214,
+    "official_name": "Kalyana Pasupatheeswarar Temple",
+    "location": {
+      "city": "Karur",
+      "district": "Karur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 215,
+    "official_name": "Theerthapureeswarar Temple",
+    "location": {
+      "city": "Thiruvatadathurai",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 216,
+    "official_name": "Pirilayakaleswarar Temple",
+    "location": {
+      "city": "Pennadam",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 217,
+    "official_name": "Vallabheswarar Temple",
+    "location": {
+      "city": "Thirukkoodalaiyaaru",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 218,
+    "official_name": "Swetharanyeswarar Temple",
+    "location": {
+      "city": "Rajendira Pattinam",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 219,
+    "official_name": "Sivakozhuntheeswarar Temple",
+    "location": {
+      "city": "Theerthanakiri",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 220,
+    "official_name": "Mangalapureeswarar Temple",
+    "location": {
+      "city": "Thiruchopuram",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 221,
+    "official_name": "Veerattaneswarar Temple",
+    "location": {
+      "city": "Thiruvathigai",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 222,
+    "official_name": "Viruthagireeswarar Temple",
+    "location": {
+      "city": "Viruthachalam",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 223,
+    "official_name": "Sishtakurunatheswarar Temple",
+    "location": {
+      "city": "Thiruthalur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 224,
+    "official_name": "Vamanapureeswarar Temple",
+    "location": {
+      "city": "Thirumani Kuzhi",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 225,
+    "official_name": "Padaleeswarar Temple",
+    "location": {
+      "city": "Thiruppadirippuliyur",
+      "district": "Cuddalore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 226,
+    "official_name": "Arunachaleswarar Temple",
+    "location": {
+      "city": "Tiruvannamalai",
+      "district": "Tiruvannamalai"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 227,
+    "official_name": "Panchanatheeswarar Temple",
+    "location": {
+      "city": "Thiruvandarkovil",
+      "district": "Puducherry"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 228,
+    "official_name": "Bhakthajaneswarar Temple",
+    "location": {
+      "city": "Thirunavalur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 229,
+    "official_name": "Sornakatheeswarar Temple",
+    "location": {
+      "city": "Neyveli",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 230,
+    "official_name": "Veeratteswarar Temple",
+    "location": {
+      "city": "Thirukovilur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 231,
+    "official_name": "Adhulyanatheswarar Temple",
+    "location": {
+      "city": "Arakandanallur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 232,
+    "official_name": "Marundeeswarar Temple",
+    "location": {
+      "city": "T. Idaiyaru",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 233,
+    "official_name": "Grupapureeswarar Temple",
+    "location": {
+      "city": "Thiruvannenallur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 234,
+    "official_name": "Sivalokanathar Temple",
+    "location": {
+      "city": "Thirumundeeswaram",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 235,
+    "official_name": "Panangattiswarar Temple",
+    "location": {
+      "city": "Panaiyapuram",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 236,
+    "official_name": "Abirameswarar Temple",
+    "location": {
+      "city": "Thiruvamathur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 237,
+    "official_name": "Ekambareswarar Temple",
+    "location": {
+      "city": "Kanchipuram",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar",
+      "sundarar"
+    ]
+  },
+  {
+    "id": 238,
+    "official_name": "Thirumetraliswarar Temple",
+    "location": {
+      "city": "Kanchipuram",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 239,
+    "official_name": "Onakantheswarar Temple",
+    "location": {
+      "city": "Onakanthanthali",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 240,
+    "official_name": "Kashianekadanthagavatheswarar Temple",
+    "location": {
+      "city": "Kanchipuram",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 241,
+    "official_name": "Sathyanatheswarar Temple",
+    "location": {
+      "city": "Kanchipuram",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 242,
+    "official_name": "Thirumakaraliswarar Temple",
+    "location": {
+      "city": "Thirumakaral",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 243,
+    "official_name": "Deivanayakeswarar Temple",
+    "location": {
+      "city": "Elumiyankottur",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 244,
+    "official_name": "Vedapureeswarar Temple",
+    "location": {
+      "city": "Thiruverkadu",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 245,
+    "official_name": "Marundeeswarar Temple",
+    "location": {
+      "city": "Thirukkachur",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 246,
+    "official_name": "Jnanapureeswarar Temple",
+    "location": {
+      "city": "Thiruvatisolam",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 247,
+    "official_name": "Vedakireeswarar Temple",
+    "location": {
+      "city": "Thirukazhukundram",
+      "district": "Chengalpattu"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 248,
+    "official_name": "Aatcheeswarar Temple",
+    "location": {
+      "city": "Achirupakkam",
+      "district": "Kanchipuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 249,
+    "official_name": "Kalaatheeswarar Temple",
+    "location": {
+      "city": "Srikalahasti",
+      "district": "Andhra Pradesh"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 250,
+    "official_name": "Thiruvalleeswarar Temple",
+    "location": {
+      "city": "Padi",
+      "district": "Chennai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 251,
+    "official_name": "Masilamaneeswarar Temple",
+    "location": {
+      "city": "Vadathirumullaivayil",
+      "district": "Chennai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 252,
+    "official_name": "Kapaleeswarar Temple",
+    "location": {
+      "city": "Mylapore",
+      "district": "Chennai"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 253,
+    "official_name": "Marundeeswarar Temple",
+    "location": {
+      "city": "Thiruvanmiyur",
+      "district": "Chennai"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 254,
+    "official_name": "Valeeswarar Temple",
+    "location": {
+      "city": "Kurangadimalai",
+      "district": "Tiruvannamalai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 255,
+    "official_name": "Vedapureeswarar Temple",
+    "location": {
+      "city": "Seeyaru",
+      "district": "Tiruvannamalai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 256,
+    "official_name": "Thalapureeswarar Temple",
+    "location": {
+      "city": "Thirupanangadu",
+      "district": "Tiruvannamalai"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 257,
+    "official_name": "Thiripuranthagar Temple",
+    "location": {
+      "city": "Koovam",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 258,
+    "official_name": "Vadaranyeswarar Temple",
+    "location": {
+      "city": "Thiruvalangadu",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 259,
+    "official_name": "Vaseeswarar Temple",
+    "location": {
+      "city": "Thiruppasur",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 260,
+    "official_name": "Oontheeswarar Temple",
+    "location": {
+      "city": "Poondi",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 261,
+    "official_name": "Sivanandeswarar Temple",
+    "location": {
+      "city": "Thirukkanthalam",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 262,
+    "official_name": "Padampakkanaathar Temple",
+    "location": {
+      "city": "Thiruvottiyur",
+      "district": "Thiruvallur"
+    },
+    "nayanmars": [
+      "sambandar",
+      "appar"
+    ]
+  },
+  {
+    "id": 263,
+    "official_name": "Chandramavulieswarar Temple",
+    "location": {
+      "city": "Thiruvakkarai",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 264,
+    "official_name": "Aralieswarar Temple",
+    "location": {
+      "city": "Ozhiyamputhur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 265,
+    "official_name": "Mahaakaaleeswarar Temple",
+    "location": {
+      "city": "Irumbai Pattu",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 266,
+    "official_name": "Agastheeswarar Temple",
+    "location": {
+      "city": "Kiliyanur",
+      "district": "Villupuram"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 267,
+    "official_name": "Vilvanatheswarar Temple",
+    "location": {
+      "city": "Thiruvalam",
+      "district": "Vellore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 268,
+    "official_name": "Manikandeswarar Temple",
+    "location": {
+      "city": "Tirumalpur",
+      "district": "Vellore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 269,
+    "official_name": "Jalanatheeswarar Temple",
+    "location": {
+      "city": "Thakkolam",
+      "district": "Vellore"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 270,
+    "official_name": "Mahabaleshwara Temple",
+    "location": {
+      "city": "Gokarna",
+      "district": "Karnataka"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 271,
+    "official_name": "Mahadeva Temple",
+    "location": {
+      "city": "Thiruvanchikulam",
+      "district": "Thrissur"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 272,
+    "official_name": "Mallikarjunaswamy Temple",
+    "location": {
+      "city": "Srisailam",
+      "district": "Andhra Pradesh"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 273,
+    "official_name": "Neelakandanathar Temple",
+    "location": {
+      "city": "Badrinath",
+      "district": "Uttarakhand"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 274,
+    "official_name": "Anekadathangavadhanathar Temple",
+    "location": {
+      "city": "Kedarnath",
+      "district": "Uttarakhand"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 275,
+    "official_name": "Kedareshwarar Temple",
+    "location": {
+      "city": "Kedarnath",
+      "district": "Uttarakhand"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  },
+  {
+    "id": 276,
+    "official_name": "Kailasanathar Temple",
+    "location": {
+      "city": "Kailash",
+      "district": "Himalaya"
+    },
+    "nayanmars": [
+      "sambandar"
+    ]
+  }
+]
