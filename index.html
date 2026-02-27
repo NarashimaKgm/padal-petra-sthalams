@@ -441,22 +441,14 @@
     </div>
 
     <!-- Filters -->
-    <select id="filter-area" class="filter-select" title="Filter by region">
-      <option value="">All Regions</option>
-      <option value="Chola Nadu (North of Kaveri)">Chola Nadu - North of Kaveri</option>
-      <option value="Chola Nadu (South of Kaveri)">Chola Nadu - South of Kaveri</option>
-      <option value="Eezha Nadu (Sri Lanka)">Eezha Nadu (Sri Lanka)</option>
-      <option value="Pandiya Nadu">Pandiya Nadu</option>
-      <option value="Kongu Nadu">Kongu Nadu</option>
-      <option value="Nadu Nadu (Central Region)">Nadu Nadu (Central Region)</option>
-      <option value="Thondai Nadu">Thondai Nadu</option>
-      <option value="Thuluva Nadu (Karnataka)">Thuluva Nadu (Karnataka)</option>
-      <option value="Malai Nadu (Kerala)">Malai Nadu (Kerala)</option>
-      <option value="Vada Nadu (North India)">Vada Nadu (North India)</option>
+    <select id="filter-mode" class="filter-select" title="Choose filter type">
+      <option value="">Filter by...</option>
+      <option value="area">Region</option>
+      <option value="district">District</option>
     </select>
 
-    <select id="filter-district" class="filter-select" title="Filter by district">
-      <option value="">All Districts</option>
+    <select id="filter-value" class="filter-select" title="Filter value" disabled>
+      <option value="">Select Region or District</option>
     </select>
 
     <!-- Right side: count + view toggle -->
@@ -816,20 +808,28 @@
 
     /* -- Init --------------------------------------------------- */
     window.addEventListener('DOMContentLoaded', () => {
-      populateDistrictFilter();
+      populateFilterValueOptions();
       applyFiltersAndRender();
       wireEvents();
     });
 
-    /* -- Populate district dropdown from data ------------------- */
-    function populateDistrictFilter() {
-      const districts = [...new Set(TEMPLES.map(t => t.location.district))]
-        .filter(Boolean).sort();
-      const sel = document.getElementById('filter-district');
-      districts.forEach(d => {
+    /* -- Populate filter values based on selected mode ---------- */
+    function populateFilterValueOptions() {
+      const mode = document.getElementById('filter-mode').value;
+      const sel = document.getElementById('filter-value');
+      const placeholder = mode === 'area' ? 'All Regions' : mode === 'district' ? 'All Districts' : 'Select Region or District';
+      sel.innerHTML = `<option value="">${placeholder}</option>`;
+      sel.disabled = !mode;
+      if (!mode) return;
+
+      const values = mode === 'area'
+        ? [...new Set(TEMPLES.map(t => t.area))]
+        : [...new Set(TEMPLES.map(t => t.location.district))];
+
+      values.filter(Boolean).sort().forEach(v => {
         const opt = document.createElement('option');
-        opt.value = d;
-        opt.textContent = d;
+        opt.value = v;
+        opt.textContent = v;
         sel.appendChild(opt);
       });
     }
@@ -841,10 +841,12 @@
         clearTimeout(debounceTimer);
         debounceTimer = setTimeout(() => { visibleCount = PAGE_SIZE; applyFiltersAndRender(); }, 280);
       });
-      document.getElementById('filter-area').addEventListener('change', () => {
+      document.getElementById('filter-mode').addEventListener('change', () => {
+        document.getElementById('filter-value').value = '';
+        populateFilterValueOptions();
         visibleCount = PAGE_SIZE; applyFiltersAndRender();
       });
-      document.getElementById('filter-district').addEventListener('change', () => {
+      document.getElementById('filter-value').addEventListener('change', () => {
         visibleCount = PAGE_SIZE; applyFiltersAndRender();
       });
     }
@@ -852,18 +854,19 @@
     /* -- Filter + sort ------------------------------------------ */
     function applyFiltersAndRender() {
       const query    = document.getElementById('search-input').value.trim().toLowerCase();
-      const area     = document.getElementById('filter-area').value;
-      const district = document.getElementById('filter-district').value;
+      const mode     = document.getElementById('filter-mode').value;
+      const value    = document.getElementById('filter-value').value;
 
       filteredList = TEMPLES.filter(t => {
-        const matchesArea     = !area     || t.area === area;
-        const matchesDistrict = !district || t.location.district === district;
+        const matchesSelection =
+          !mode || !value ||
+          (mode === 'area' ? t.area === value : t.location.district === value);
         const matchesQuery    = !query    || [
           t.official_name,
           t.location.city,
           t.location.district
         ].some(f => f && f.toLowerCase().includes(query));
-        return matchesArea && matchesDistrict && matchesQuery;
+        return matchesSelection && matchesQuery;
       });
 
       // Sort A-Z by name
