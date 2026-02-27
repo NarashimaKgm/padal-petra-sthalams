@@ -1,11 +1,11 @@
 /* ============================================================
-   PAADAL PETRA STHALAMS — main.css
+   PAADAL PETRA STHALAMS - main.css
    Global CSS variables, reset, base typography
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
-/* ── Design Tokens ─────────────────────────────────────────── */
+/* -- Design Tokens ------------------------------------------- */
 :root {
   /* Brand colors */
   --clr-maroon:        #800000;
@@ -57,7 +57,7 @@
   --radius-lg:         16px;
 }
 
-/* ── Reset ──────────────────────────────────────────────────── */
+/* -- Reset ---------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -77,7 +77,7 @@ img { max-width: 100%; display: block; }
 
 ul, ol { list-style: none; }
 
-/* ── Header ─────────────────────────────────────────────────── */
+/* -- Header --------------------------------------------------- */
 .site-header {
   background: var(--clr-maroon);
   color: var(--clr-text-inverse);
@@ -148,7 +148,7 @@ ul, ol { list-style: none; }
   text-decoration: none;
 }
 
-/* ── Footer ─────────────────────────────────────────────────── */
+/* -- Footer --------------------------------------------------- */
 .site-footer {
   background: var(--clr-maroon-dark);
   color: var(--clr-stone);
@@ -163,7 +163,7 @@ ul, ol { list-style: none; }
   color: var(--clr-gold-light);
 }
 
-/* ── Utility classes ─────────────────────────────────────────── */
+/* -- Utility classes ------------------------------------------- */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -253,7 +253,7 @@ ul, ol { list-style: none; }
   margin: var(--sp-lg) 0;
 }
 
-/* ── Responsive base ─────────────────────────────────────────── */
+/* -- Responsive base ------------------------------------------- */
 @media (max-width: 600px) {
   :root { --sp-lg: 16px; }
 

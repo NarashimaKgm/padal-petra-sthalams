@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paadal Petra Sthalams — 276 Sacred Shiva Temples</title>
+  <title>Paadal Petra Sthalams - 276 Sacred Shiva Temples</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ── Reset & base ──────────────────────────────────────── */
+    /* -- Reset & base ---------------------------------------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { font-size: 16px; scroll-behavior: smooth; }
     body {
@@ -21,7 +21,7 @@
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
 
-    /* ── Design tokens ─────────────────────────────────────── */
+    /* -- Design tokens --------------------------------------- */
     :root {
       --maroon:      #800000;
       --maroon-dark: #5C0000;
@@ -38,7 +38,7 @@
       --sundarar:    #7B2D9E;
     }
 
-    /* ── Header ────────────────────────────────────────────── */
+    /* -- Header ---------------------------------------------- */
     .site-header {
       background: var(--maroon);
       border-bottom: 3px solid var(--gold);
@@ -88,7 +88,7 @@
       background: rgba(255,255,255,0.08);
     }
 
-    /* ── Hero section ──────────────────────────────────────── */
+    /* -- Hero section ---------------------------------------- */
     .hero {
       background: linear-gradient(135deg, var(--maroon-dark) 0%, #6B0000 50%, #8B1A00 100%);
       color: #FDF6E3;
@@ -152,7 +152,7 @@
     .stat-pill.appar     { background: rgba(212,112,10,0.5); color: #FFE8CC; }
     .stat-pill.sundarar  { background: rgba(123,45,158,0.5); color: #EDD5FF; }
 
-    /* ── Search + Filter bar ───────────────────────────────── */
+    /* -- Search + Filter bar --------------------------------- */
     .controls-bar {
       background: var(--cream);
       border-bottom: 2px solid var(--stone);
@@ -251,14 +251,14 @@
     }
     .view-btn svg { flex-shrink: 0; }
 
-    /* ── Main content area ─────────────────────────────────── */
+    /* -- Main content area ----------------------------------- */
     .main-content {
       max-width: 1280px;
       margin: 0 auto;
       padding: 28px 32px 64px;
     }
 
-    /* ── Grid view ─────────────────────────────────────────── */
+    /* -- Grid view ------------------------------------------- */
     .temple-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -330,7 +330,7 @@
     .badge-appar     { background: var(--appar); }
     .badge-sundarar  { background: var(--sundarar); }
 
-    /* ── List view ─────────────────────────────────────────── */
+    /* -- List view ------------------------------------------- */
     .temple-list { display: none; }
     .temple-list-row {
       display: flex;
@@ -384,12 +384,12 @@
       flex-shrink: 0;
     }
 
-    /* ── Active state for views ────────────────────────────── */
+    /* -- Active state for views ------------------------------ */
     body.list-view .temple-grid { display: none; }
     body.list-view .temple-list { display: block; }
     body.list-view #load-more-wrap { display: none; }
 
-    /* ── Load more ─────────────────────────────────────────── */
+    /* -- Load more ------------------------------------------- */
     #load-more-wrap {
       text-align: center;
       margin-top: 32px;
@@ -412,7 +412,7 @@
       color: var(--gold-light);
     }
 
-    /* ── Empty / no-results state ──────────────────────────── */
+    /* -- Empty / no-results state ---------------------------- */
     .empty-state {
       text-align: center;
       padding: 64px 24px;
@@ -423,7 +423,7 @@
     .empty-state-icon { font-size: 3rem; margin-bottom: 12px; }
     .empty-state h3 { font-size: 1.1rem; margin-bottom: 6px; color: var(--text); }
 
-    /* ── Footer ────────────────────────────────────────────── */
+    /* -- Footer ---------------------------------------------- */
     .site-footer {
       background: var(--maroon-dark);
       border-top: 3px solid var(--gold);
@@ -433,7 +433,7 @@
       font-size: 0.82rem;
     }
 
-    /* ── Responsive ────────────────────────────────────────── */
+    /* -- Responsive ------------------------------------------ */
     @media (max-width: 1100px) {
       .temple-grid { grid-template-columns: repeat(3, 1fr); }
     }
@@ -454,7 +454,7 @@
 
 <body>
 
-  <!-- ── Header ─────────────────────────────────────────────── -->
+  <!-- -- Header ----------------------------------------------- -->
   <header class="site-header">
     <a href="index.html" class="logo">
       <span class="logo-icon">&#x1F6D5;</span>
@@ -468,7 +468,7 @@
     </nav>
   </header>
 
-  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <!-- -- Hero ------------------------------------------------- -->
   <section class="hero">
     <div class="hero-inner">
       <span class="hero-om">&#x0950;</span>
@@ -482,7 +482,7 @@
     </div>
   </section>
 
-  <!-- ── Controls bar ───────────────────────────────────────── -->
+  <!-- -- Controls bar ----------------------------------------- -->
   <div class="controls-bar">
 
     <!-- Search -->
@@ -494,7 +494,7 @@
         type="search"
         id="search-input"
         class="search-input"
-        placeholder="Search by temple name, city or district…"
+        placeholder="Search by temple name, city or district..."
         autocomplete="off"
       >
     </div>
@@ -509,8 +509,8 @@
 
     <select id="filter-area" class="filter-select" title="Filter by region">
       <option value="">All Regions</option>
-      <option value="Chola Nadu (North of Kaveri)">Chola Nadu — North of Kaveri</option>
-      <option value="Chola Nadu (South of Kaveri)">Chola Nadu — South of Kaveri</option>
+      <option value="Chola Nadu (North of Kaveri)">Chola Nadu - North of Kaveri</option>
+      <option value="Chola Nadu (South of Kaveri)">Chola Nadu - South of Kaveri</option>
       <option value="Eezha Nadu (Sri Lanka)">Eezha Nadu (Sri Lanka)</option>
       <option value="Pandiya Nadu">Pandiya Nadu</option>
       <option value="Kongu Nadu">Kongu Nadu</option>
@@ -546,7 +546,7 @@
     </div>
   </div>
 
-  <!-- ── Main content ───────────────────────────────────────── -->
+  <!-- -- Main content ----------------------------------------- -->
   <main class="main-content">
 
     <!-- Grid view -->
@@ -571,7 +571,7 @@
 
   </main>
 
-  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <!-- -- Footer ----------------------------------------------- -->
   <footer class="site-footer">
     <p>Paadal Petra Sthalams &mdash; 276 Shiva Temples of the Tevaram</p>
     <p style="margin-top:6px;font-size:0.75rem;opacity:0.7;">
@@ -579,15 +579,15 @@
     </p>
   </footer>
 
-  <!-- ── JavaScript ─────────────────────────────────────────── -->
+  <!-- -- JavaScript ------------------------------------------- -->
   <script>
-    /* ── Temple data ──────────────────────────────────────────
+    /* -- Temple data ------------------------------------------
        Replace the entries below with real temple data.
        Each temple needs: id, official_name, location (city, district),
        nayanmars (array), and optionally: history, tevaram, how_to_reach.
-    ── */
+    -- */
     const TEMPLES = [
-      /* ── Chola Nadu — North of Kaveri (63) ────────────────── */
+      /* -- Chola Nadu - North of Kaveri (63) ------------------ */
       {id:1,   official_name:"Vaithiyanathaswamy Temple",         location:{city:"Thirumazhapadi",         district:"Ariyalur"},          nayanmars:["sambandar"],area:"Chola Nadu (North of Kaveri)"},
       {id:2,   official_name:"Alanduraiyar Temple",               location:{city:"Keezhapaluvur",           district:"Ariyalur"},          nayanmars:["sambandar"],area:"Chola Nadu (North of Kaveri)"},
       {id:3,   official_name:"Thillai Nataraja Temple",           location:{city:"Chidambaram",             district:"Cuddalore"},         nayanmars:["sambandar","appar","sundarar"],area:"Chola Nadu (North of Kaveri)"},
@@ -651,7 +651,7 @@
       {id:61,  official_name:"Kunthaleeswarar Temple",            location:{city:"Thirukkurakka",           district:"Nagapattinam"},      nayanmars:["sambandar"],area:"Chola Nadu (North of Kaveri)"},
       {id:62,  official_name:"Manikkavannar Temple",              location:{city:"Thiruvalapputhur",        district:"Nagapattinam"},      nayanmars:["sambandar"],area:"Chola Nadu (North of Kaveri)"},
       {id:63,  official_name:"Neelakandeswarar Temple",           location:{city:"Iluppai Pattu",           district:"Nagapattinam"},      nayanmars:["sambandar"],area:"Chola Nadu (North of Kaveri)"},
-      /* ── Chola Nadu — South of Kaveri (128) ───────────────── */
+      /* -- Chola Nadu - South of Kaveri (128) ----------------- */
       {id:64,  official_name:"Kadambavaaneswarar Temple",         location:{city:"Kulithalai",              district:"Karur"},             nayanmars:["sambandar"],area:"Chola Nadu (South of Kaveri)"},
       {id:65,  official_name:"Rathinagireeswarar Temple",         location:{city:"Ayyar Malai",             district:"Karur"},             nayanmars:["sambandar"],area:"Chola Nadu (South of Kaveri)"},
       {id:66,  official_name:"Darbaranyeswarar Temple",           location:{city:"Thirunallar",             district:"Karaikal"},          nayanmars:["sambandar","appar","sundarar"],area:"Chola Nadu (South of Kaveri)"},
@@ -780,10 +780,10 @@
       {id:189, official_name:"Parvathiswarar Temple",             location:{city:"Thiruthalacherry",        district:"Puducherry"},        nayanmars:["sambandar"],area:"Chola Nadu (South of Kaveri)"},
       {id:190, official_name:"Yazhmoorinathar Temple",            location:{city:"Tharumapuram",            district:"Puducherry"},        nayanmars:["sambandar"],area:"Chola Nadu (South of Kaveri)"},
       {id:191, official_name:"Punniyakodiyappar Temple",          location:{city:"Thiruvidai Vasal",        district:"Thiruvarur"},        nayanmars:["sambandar"],area:"Chola Nadu (South of Kaveri)"},
-      /* ── Eezha Nadu / Sri Lanka (2) ───────────────────────── */
+      /* -- Eezha Nadu / Sri Lanka (2) ------------------------- */
       {id:192, official_name:"Koneswaram Temple",                 location:{city:"Trincomalee",             district:"Sri Lanka"},         nayanmars:["sambandar"],area:"Eezha Nadu (Sri Lanka)"},
       {id:193, official_name:"Thirukketheeswaram Temple",         location:{city:"Mannar",                  district:"Sri Lanka"},         nayanmars:["sambandar"],area:"Eezha Nadu (Sri Lanka)"},
-      /* ── Pandiya Nadu (14) ─────────────────────────────────── */
+      /* -- Pandiya Nadu (14) ----------------------------------- */
       {id:194, official_name:"Kodunkundranathar Temple",          location:{city:"Piranmalai",              district:"Sivaganga"},         nayanmars:["sambandar"],area:"Pandiya Nadu"},
       {id:195, official_name:"Thiruthalinathar Temple",           location:{city:"Tirupattur",              district:"Sivaganga"},         nayanmars:["sambandar"],area:"Pandiya Nadu"},
       {id:196, official_name:"Kalayar Koil Temple",               location:{city:"Kalaiyar Kovil",          district:"Sivaganga"},         nayanmars:["sambandar"],area:"Pandiya Nadu"},
@@ -798,17 +798,17 @@
       {id:205, official_name:"Ramanathaswamy Temple",             location:{city:"Rameswaram",              district:"Ramanathapuram"},    nayanmars:["sambandar"],area:"Pandiya Nadu"},
       {id:206, official_name:"Thiruvadanai Temple",               location:{city:"Thiruvadanai",            district:"Ramanathapuram"},    nayanmars:["sambandar"],area:"Pandiya Nadu"},
       {id:207, official_name:"Bhuminathar Temple",                location:{city:"Tiruchuli",               district:"Virudhunagar"},      nayanmars:["sambandar"],area:"Pandiya Nadu"},
-      /* ── Kongu Nadu (7) ────────────────────────────────────── */
+      /* -- Kongu Nadu (7) -------------------------------------- */
       {id:208, official_name:"Avinasippar Temple",                location:{city:"Avinashi",                district:"Tiruppur"},          nayanmars:["sambandar"],area:"Kongu Nadu"},
       {id:209, official_name:"Thirumuruganathar Temple",          location:{city:"Thirumuruganpundi",       district:"Tiruppur"},          nayanmars:["sambandar"],area:"Kongu Nadu"},
       {id:210, official_name:"Sangameswarar Temple",              location:{city:"Bhavani",                 district:"Erode"},             nayanmars:["sambandar"],area:"Kongu Nadu"},
       {id:211, official_name:"Arthanareeswarar Temple",           location:{city:"Thiruchengode",           district:"Namakkal"},          nayanmars:["sambandar"],area:"Kongu Nadu"},
       {id:212, official_name:"Kalyana Vikirtheeswarar Temple",    location:{city:"Venjamangudalur",         district:"Karur"},             nayanmars:["sambandar"],area:"Kongu Nadu"},
-      // TODO: Watch before filling content — https://www.facebook.com/AbiramiAudio/videos/%E0%AE%AE%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AF%82%E0%AE%B0%E0%AF%8D%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D-%E0%AE%85%E0%AE%B0%E0%AF%81%E0%AE%B3%E0%AF%88%E0%AE%AA%E0%AF%8D-%E0%AE%AA%E0%AF%86%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D-%E0%AE%95%E0%AF%8A%E0%AE%9F%E0%AF%81%E0%AE%AE%E0%AF%81%E0%AE%9F%E0%AE%BF-%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B2%E0%AE%AE%E0%AF%8D/325527938379035/
+      // TODO: Watch before filling content - https://www.facebook.com/AbiramiAudio/videos/%E0%AE%AE%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AE%E0%AF%82%E0%AE%B0%E0%AF%8D%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%95%E0%AE%B3%E0%AF%8D-%E0%AE%85%E0%AE%B0%E0%AF%81%E0%AE%B3%E0%AF%88%E0%AE%AA%E0%AF%8D-%E0%AE%AA%E0%AF%86%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D-%E0%AE%95%E0%AF%8A%E0%AE%9F%E0%AF%81%E0%AE%AE%E0%AF%81%E0%AE%9F%E0%AE%BF-%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B2%E0%AE%AE%E0%AF%8D/325527938379035/
       // NOTE: nayanmars confirmed all three (Sambandar, Appar, Sundarar) via shaivam.org cross-check
       {id:213, official_name:"Kodumudinathar Temple",             location:{city:"Kodumudi",                district:"Erode"},             nayanmars:["sambandar","appar","sundarar"],area:"Kongu Nadu"},
       {id:214, official_name:"Kalyana Pasupatheeswarar Temple",   location:{city:"Karur",                   district:"Karur"},             nayanmars:["sambandar"],area:"Kongu Nadu"},
-      /* ── Nadu Nadu / Central Region (22) ──────────────────── */
+      /* -- Nadu Nadu / Central Region (22) -------------------- */
       {id:215, official_name:"Theerthapureeswarar Temple",        location:{city:"Thiruvatadathurai",       district:"Cuddalore"},         nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
       {id:216, official_name:"Pirilayakaleswarar Temple",         location:{city:"Pennadam",                district:"Cuddalore"},         nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
       {id:217, official_name:"Vallabheswarar Temple",             location:{city:"Thirukkoodalaiyaaru",     district:"Cuddalore"},         nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
@@ -831,7 +831,7 @@
       {id:234, official_name:"Sivalokanathar Temple",             location:{city:"Thirumundeeswaram",       district:"Villupuram"},        nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
       {id:235, official_name:"Panangattiswarar Temple",           location:{city:"Panaiyapuram",            district:"Villupuram"},        nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
       {id:236, official_name:"Abirameswarar Temple",              location:{city:"Thiruvamathur",           district:"Villupuram"},        nayanmars:["sambandar"],area:"Nadu Nadu (Central Region)"},
-      /* ── Thondai Nadu (33) ─────────────────────────────────── */
+      /* -- Thondai Nadu (33) ----------------------------------- */
       {id:237, official_name:"Ekambareswarar Temple",             location:{city:"Kanchipuram",             district:"Kanchipuram"},       nayanmars:["sambandar","appar","sundarar"],area:"Thondai Nadu"},
       {id:238, official_name:"Thirumetraliswarar Temple",         location:{city:"Kanchipuram",             district:"Kanchipuram"},       nayanmars:["sambandar"],area:"Thondai Nadu"},
       {id:239, official_name:"Onakantheswarar Temple",            location:{city:"Onakanthanthali",         district:"Kanchipuram"},       nayanmars:["sambandar"],area:"Thondai Nadu"},
@@ -865,11 +865,11 @@
       {id:267, official_name:"Vilvanatheswarar Temple",           location:{city:"Thiruvalam",              district:"Vellore"},           nayanmars:["sambandar"],area:"Thondai Nadu"},
       {id:268, official_name:"Manikandeswarar Temple",            location:{city:"Tirumalpur",              district:"Vellore"},           nayanmars:["sambandar"],area:"Thondai Nadu"},
       {id:269, official_name:"Jalanatheeswarar Temple",           location:{city:"Thakkolam",               district:"Vellore"},           nayanmars:["sambandar"],area:"Thondai Nadu"},
-      /* ── Thuluva Nadu / Karnataka (1) ──────────────────────── */
+      /* -- Thuluva Nadu / Karnataka (1) ------------------------ */
       {id:270, official_name:"Mahabaleshwara Temple",             location:{city:"Gokarna",                 district:"Karnataka"},         nayanmars:["sambandar"],area:"Thuluva Nadu (Karnataka)"},
-      /* ── Malai Nadu / Kerala (1) ───────────────────────────── */
+      /* -- Malai Nadu / Kerala (1) ----------------------------- */
       {id:271, official_name:"Mahadeva Temple",                   location:{city:"Thiruvanchikulam",        district:"Thrissur"},          nayanmars:["sambandar"],area:"Malai Nadu (Kerala)"},
-      /* ── Vada Nadu / North India (5) ───────────────────────── */
+      /* -- Vada Nadu / North India (5) ------------------------- */
       {id:272, official_name:"Mallikarjunaswamy Temple",          location:{city:"Srisailam",               district:"Andhra Pradesh"},    nayanmars:["sambandar"],area:"Vada Nadu (North India)"},
       {id:273, official_name:"Neelakandanathar Temple",           location:{city:"Badrinath",               district:"Uttarakhand"},       nayanmars:["sambandar"],area:"Vada Nadu (North India)"},
       {id:274, official_name:"Anekadathangavadhanathar Temple",   location:{city:"Kedarnath",               district:"Uttarakhand"},       nayanmars:["sambandar"],area:"Vada Nadu (North India)"},
@@ -877,20 +877,20 @@
       {id:276, official_name:"Kailasanathar Temple",              location:{city:"Kailash",                 district:"Himalaya"},          nayanmars:["sambandar"],area:"Vada Nadu (North India)"}
     ];
 
-    /* ── State ────────────────────────────────────────────────── */
+    /* -- State -------------------------------------------------- */
     let currentView   = 'grid';
     let visibleCount  = 24;
     const PAGE_SIZE   = 24;
     let filteredList  = [...TEMPLES];
 
-    /* ── Init ─────────────────────────────────────────────────── */
+    /* -- Init --------------------------------------------------- */
     window.addEventListener('DOMContentLoaded', () => {
       populateDistrictFilter();
       applyFiltersAndRender();
       wireEvents();
     });
 
-    /* ── Populate district dropdown from data ─────────────────── */
+    /* -- Populate district dropdown from data ------------------- */
     function populateDistrictFilter() {
       const districts = [...new Set(TEMPLES.map(t => t.location.district))]
         .filter(Boolean).sort();
@@ -903,7 +903,7 @@
       });
     }
 
-    /* ── Wire up search + filter events ──────────────────────── */
+    /* -- Wire up search + filter events ------------------------ */
     let debounceTimer;
     function wireEvents() {
       document.getElementById('search-input').addEventListener('input', () => {
@@ -921,7 +921,7 @@
       });
     }
 
-    /* ── Filter + sort ────────────────────────────────────────── */
+    /* -- Filter + sort ------------------------------------------ */
     function applyFiltersAndRender() {
       const query    = document.getElementById('search-input').value.trim().toLowerCase();
       const saint    = document.getElementById('filter-saint').value;
@@ -940,20 +940,20 @@
         return matchesSaint && matchesArea && matchesDistrict && matchesQuery;
       });
 
-      // Sort A–Z by name
+      // Sort A-Z by name
       filteredList.sort((a, b) => a.official_name.localeCompare(b.official_name));
 
       renderCurrent();
     }
 
-    /* ── Render based on current view ─────────────────────────── */
+    /* -- Render based on current view --------------------------- */
     function renderCurrent() {
       if (currentView === 'grid') renderGrid();
       else renderList();
       updateResultCount();
     }
 
-    /* ── Render grid view ─────────────────────────────────────── */
+    /* -- Render grid view --------------------------------------- */
     function renderGrid() {
       const container = document.getElementById('temple-grid');
       const slice = filteredList.slice(0, visibleCount);
@@ -986,7 +986,7 @@
       document.getElementById('empty-state').classList.toggle('visible', filteredList.length === 0);
     }
 
-    /* ── Render list view ─────────────────────────────────────── */
+    /* -- Render list view --------------------------------------- */
     function renderList() {
       const container = document.getElementById('temple-list');
       container.innerHTML = '';
@@ -1014,13 +1014,13 @@
       document.getElementById('empty-state').classList.toggle('visible', filteredList.length === 0);
     }
 
-    /* ── Load more tiles ──────────────────────────────────────── */
+    /* -- Load more tiles ---------------------------------------- */
     function loadMore() {
       visibleCount += PAGE_SIZE;
       renderGrid();
     }
 
-    /* ── Switch view (grid / list) ────────────────────────────── */
+    /* -- Switch view (grid / list) ------------------------------ */
     function setView(view) {
       currentView = view;
       document.body.classList.toggle('list-view', view === 'list');
@@ -1029,7 +1029,7 @@
       renderCurrent();
     }
 
-    /* ── Update result count label ────────────────────────────── */
+    /* -- Update result count label ------------------------------ */
     function updateResultCount() {
       const total = filteredList.length;
       document.getElementById('result-count').textContent =

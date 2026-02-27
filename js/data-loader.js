@@ -1,5 +1,5 @@
 /* ============================================================
-   data-loader.js — Fetches and caches temple JSON data
+   data-loader.js - Fetches and caches temple JSON data
    Singleton: fetch happens once per page session.
    ============================================================ */
 

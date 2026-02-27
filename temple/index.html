@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple — Paadal Petra Sthalams</title>
+  <title>Temple - Paadal Petra Sthalams</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ── Reset & base ──────────────────────────────────────── */
+    /* -- Reset & base ---------------------------------------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { font-size: 16px; scroll-behavior: smooth; }
     body {
@@ -20,7 +20,7 @@
     }
     a { text-decoration: none; color: inherit; }
 
-    /* ── Design tokens ─────────────────────────────────────── */
+    /* -- Design tokens --------------------------------------- */
     :root {
       --maroon:      #800000;
       --maroon-dark: #5C0000;
@@ -37,7 +37,7 @@
       --sundarar:    #7B2D9E;
     }
 
-    /* ── Header ────────────────────────────────────────────── */
+    /* -- Header ---------------------------------------------- */
     .site-header {
       background: var(--maroon);
       border-bottom: 3px solid var(--gold);
@@ -90,7 +90,7 @@
       background: rgba(255,255,255,0.08);
     }
 
-    /* ── Hero / Temple header ───────────────────────────────── */
+    /* -- Hero / Temple header --------------------------------- */
     .temple-hero {
       background: linear-gradient(135deg, var(--maroon-dark) 0%, #6B0000 50%, #8B1A00 100%);
       color: #FDF6E3;
@@ -158,14 +158,14 @@
     .badge-appar     { background: var(--appar); }
     .badge-sundarar  { background: var(--sundarar); }
 
-    /* ── Main content ───────────────────────────────────────── */
+    /* -- Main content ----------------------------------------- */
     .main-content {
       max-width: 860px;
       margin: 0 auto;
       padding: 40px 32px 80px;
     }
 
-    /* ── Section card ───────────────────────────────────────── */
+    /* -- Section card ----------------------------------------- */
     .temple-section {
       background: var(--cream);
       border-radius: 10px;
@@ -199,7 +199,7 @@
       font-style: italic;
     }
 
-    /* ── Not found state ────────────────────────────────────── */
+    /* -- Not found state -------------------------------------- */
     .not-found {
       text-align: center;
       padding: 80px 24px;
@@ -208,7 +208,7 @@
     .not-found-icon { font-size: 3rem; margin-bottom: 16px; }
     .not-found h2 { font-size: 1.3rem; margin-bottom: 8px; color: var(--text); }
 
-    /* ── Footer ─────────────────────────────────────────────── */
+    /* -- Footer ----------------------------------------------- */
     .site-footer {
       background: var(--maroon-dark);
       border-top: 3px solid var(--gold);
@@ -218,7 +218,7 @@
       font-size: 0.82rem;
     }
 
-    /* ── Responsive ─────────────────────────────────────────── */
+    /* -- Responsive ------------------------------------------- */
     @media (max-width: 760px) {
       .site-header { padding: 0 16px; height: 56px; }
       .logo-text-sub { display: none; }
@@ -232,7 +232,7 @@
 
 <body>
 
-  <!-- ── Header ─────────────────────────────────────────────── -->
+  <!-- -- Header ----------------------------------------------- -->
   <header class="site-header">
     <a href="../" class="logo">
       <span class="logo-icon">&#x1F6D5;</span>
@@ -246,7 +246,7 @@
     </a>
   </header>
 
-  <!-- ── Temple hero (populated by JS) ─────────────────────── -->
+  <!-- -- Temple hero (populated by JS) ----------------------- -->
   <section class="temple-hero" id="temple-hero" style="display:none;">
     <div class="temple-hero-inner">
       <div class="temple-number" id="temple-number"></div>
@@ -262,14 +262,14 @@
     </div>
   </section>
 
-  <!-- ── Not found ──────────────────────────────────────────── -->
+  <!-- -- Not found -------------------------------------------- -->
   <div class="not-found" id="not-found" style="display:none;">
     <div class="not-found-icon">&#127963;</div>
     <h2>Temple not found</h2>
     <p>The temple you're looking for doesn't exist. <a href="../" style="color:var(--maroon);">Go back to the list.</a></p>
   </div>
 
-  <!-- ── Main content ───────────────────────────────────────── -->
+  <!-- -- Main content ----------------------------------------- -->
   <main class="main-content" id="main-content" style="display:none;">
 
     <!-- 1. History -->
@@ -318,7 +318,7 @@
 
   </main>
 
-  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <!-- -- Footer ----------------------------------------------- -->
   <footer class="site-footer">
     <p>Paadal Petra Sthalams &mdash; 276 Shiva Temples of the Tevaram</p>
     <p style="margin-top:6px;font-size:0.75rem;opacity:0.7;">
@@ -326,7 +326,7 @@
     </p>
   </footer>
 
-  <!-- ── Scripts ────────────────────────────────────────────── -->
+  <!-- -- Scripts ---------------------------------------------- -->
   <script src="../js/utils.js"></script>
   <script src="../js/data-loader.js"></script>
   <script>
@@ -340,7 +340,7 @@
       if (!temple) { showNotFound(); return; }
 
       // Update page title
-      document.title = `${temple.official_name} — Paadal Petra Sthalams`;
+      document.title = `${temple.official_name} - Paadal Petra Sthalams`;
 
       // Populate hero
       document.getElementById('temple-number').textContent =

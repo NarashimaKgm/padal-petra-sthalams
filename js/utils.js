@@ -1,10 +1,10 @@
 /* ============================================================
-   utils.js — Shared utility functions
+   utils.js - Shared utility functions
    ============================================================ */
 
 /**
  * Read a single URL query parameter by name.
- * e.g. getQueryParam('id') on "temple/?id=42" → "42"
+ * e.g. getQueryParam('id') on "temple/?id=42" -> "42"
  */
 function getQueryParam(param) {
   const params = new URLSearchParams(window.location.search);
@@ -13,7 +13,7 @@ function getQueryParam(param) {
 
 /**
  * Remove diacritics and lowercase a string for fuzzy searching.
- * e.g. normalizeText("Thiruvannamalai") → "thiruvannamalai"
+ * e.g. normalizeText("Thiruvannamalai") -> "thiruvannamalai"
  */
 function normalizeText(str) {
   if (!str) return '';
