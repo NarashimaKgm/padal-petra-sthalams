@@ -2579,7 +2579,32 @@
       "sundarar"
     ],
     "area": "Kongu Nadu",
-    "shaivam_url": "https://shaivam.org/hindu-hub/temples/place/thirupandikkodumudi-kodumudinathar-temple/?utm_source=chatgpt.com#gsc.tab=0"
+    "shaivam_url": "https://shaivam.org/hindu-hub/temples/place/thirupandikkodumudi-kodumudinathar-temple/",
+    "how_to_reach": [
+      "Kodumudinathar (Magudeswarar) Temple is in Kodumudi town, Erode district, on the Erode-Karur route.",
+      "By train: Kodumudi Railway Station is the nearest stop; the temple is a short auto ride from the station.",
+      "By bus: Frequent buses operate from Erode, Karur, and nearby Kongu Nadu towns to Kodumudi bus stand.",
+      "By road: Private vehicles can park near the temple streets; mornings and festival days get crowded.",
+      "Nearest major airports: Coimbatore and Tiruchirappalli."
+    ],
+    "visit_notes": "I took a bus to Kodumudi and got down at the New Bus Stand. The temple is about 0.5 km from the bus stand, and plenty of auto-rickshaws are available there. It took around 7 minutes to walk to the temple. There are many shops on the way to buy puja items, and a good number of vegetarian food options nearby. This temple is well known for parikara pujas, and you can see many devotees performing different types of pujas inside. There are also multiple theerthams in the temple, which can be collected and taken home in bottles.",
+    "images": [
+      {
+        "src": "images/kodumudi/kodumudi-vadivudaiyanayaki-entrance.jpg",
+        "alt": "Sri Vadivudaiyanayaki Amman Sannidhanam entrance at Kodumudi temple",
+        "caption": "Sri Vadivudaiyanayaki Amman Sannidhanam Entrance"
+      },
+      {
+        "src": "images/kodumudi/kodumudi-temple-complex-view.jpg",
+        "alt": "Kodumudi temple complex view with multiple entrance towers",
+        "caption": "Kodumudi Temple Complex View"
+      },
+      {
+        "src": "images/kodumudi/kodumudi-magudeswara-entrance.jpg",
+        "alt": "Sri Magudeswara Swami temple entrance at Kodumudi",
+        "caption": "Sri Magudeswara Swami Temple Entrance"
+      }
+    ]
   },
   {
     "id": 214,
